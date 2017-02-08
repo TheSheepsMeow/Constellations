@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event Sheet Level 1</name>
+    <events>
+        <include>Timer Events</include>
+        <include>Touch Events</include>
+        <variable constant="0" name="Completed" sid="877105483134456" static="0" type="number">0</variable>
+        <variable constant="0" name="Timer" sid="949009625584683" static="0" type="number">310</variable>
+        <variable constant="0" name="touched" sid="379702653952123" static="0" type="number">0</variable>
+        <variable constant="0" name="TimeStart" sid="330941443442313" static="0" type="number">4</variable>
+        <variable constant="0" name="Start" sid="260305429810823" static="0" type="number">0</variable>
+        <event-group description="" sid="411400444489571" title="Create Points">
+            <sub-events>
+                <event-block sid="300376500993836">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="276819512577106" type="System">
+                            <param id="0" name="First value">Point.Count</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Second value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="131136665043934" type="System">
+                            <param id="0" name="Object to create">Point</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">random(20, 300)</param>
+                            <param id="3" name="Y">random(100, 365)</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="652681471915499" type="Point">
+                            <param id="0" name="Angle">random(360)</param>
+                        </action>
+                        <action id="9" name="Set scale" sid="771394872395018" type="Point">
+                            <param id="0" name="Scale">random(0.85, 1)</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="443908434043554" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="839571084208427" type="Point">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="962797172480897" type="Point" />
+                    </actions>
+                </event-block>
+                <event-block sid="950994078817918">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="811662375110656" type="Point">
+                            <param id="0" name="Object">Point</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="985854019320463" type="Point" />
+                        <action id="-3" name="Create object" sid="784255390515254" type="System">
+                            <param id="0" name="Object to create">Point</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">random(20, 300)</param>
+                            <param id="3" name="Y">random(100, 365)</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="210968316373309" type="Point">
+                            <param id="0" name="Angle">random(360)</param>
+                        </action>
+                        <action id="9" name="Set scale" sid="656113284264186" type="Point">
+                            <param id="0" name="Scale">random(0.85, 1)</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="970049857565662" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="500945192064926" type="Point">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="775264318108511" type="Point" />
+                    </actions>
+                </event-block>
+                <event-block sid="376167571976612">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="633389298844214" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="107960536403142">
+                            <conditions>
+                                <condition id="-12" name="Repeat" sid="780216386802017" type="System">
+                                    <param id="0" name="Count">choose(5, 6, 7)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="645492535251344" type="System">
+                                    <param id="0" name="Object to create">Point</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="X">random(20, 300)</param>
+                                    <param id="3" name="Y">random(100, 365)</param>
+                                </action>
+                                <action id="-8" name="Set angle" sid="794878573254958" type="Point">
+                                    <param id="0" name="Angle">random(360)</param>
+                                </action>
+                                <action id="9" name="Set scale" sid="197304575176317" type="Point">
+                                    <param id="0" name="Scale">random(0.85, 1)</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="389665661119484" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="951601703222167" type="Point">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action behavior="Fade" id="1" name="Start fade" sid="886361252644712" type="Point" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="for visual purpose only" sid="427938488408228" title="Create Star BG">
+            <sub-events>
+                <event-block sid="126356459166084">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="903688266692529" type="System">
+                            <param id="0" name="First value">bg_stars.Count</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Second value">25</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="269257849952731" type="System">
+                            <param id="0" name="Object to create">bg_stars</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">random(25, WindowWidth-25)</param>
+                            <param id="3" name="Y">random(25, WindowHeight-25)</param>
+                        </action>
+                        <action id="9" name="Set scale" sid="432803109614302" type="bg_stars">
+                            <param id="0" name="Scale">random(0.35, 1)</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="726165593149124" type="bg_stars">
+                            <param id="0" name="Opacity">random(45,80)</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="878768149685242" type="bg_stars">
+                            <param id="0" name="Angle">random(360)</param>
+                        </action>
+                        <action id="-24" name="Move to top" sid="464249820548858" type="bg_stars" />
+                    </actions>
+                </event-block>
+                <event-block sid="277037425504888">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="943144747984782" type="System">
+                            <param id="0" name="First value">nebula.Count</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Second value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="180856949593360" type="System">
+                            <param id="0" name="Object to create">nebula</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">random(100, WindowWidth-100)</param>
+                            <param id="3" name="Y">random(200, WindowHeight-200)</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="993736011186521" type="nebula">
+                            <param id="0" name="Angle">choose(30,60,45)</param>
+                        </action>
+                        <action id="9" name="Set scale" sid="698086954203313" type="nebula">
+                            <param id="0" name="Scale">random(0.75, 1.5)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="601500274175188">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="983256343078825">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="420205330922448">
+                    <conditions />
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

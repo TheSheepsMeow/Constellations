@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Timer Events</name>
+    <events>
+        <event-group description="" sid="167020663087791" title="Timers">
+            <sub-events>
+                <event-block sid="829550090635108">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="534708898531388" type="System">
+                            <param id="0" name="Variable">Start</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                        <condition id="-21" name="Is between values" sid="532975077297375" type="System">
+                            <param id="0" name="Value">Timer</param>
+                            <param id="1" name="Lower bound">1</param>
+                            <param id="2" name="Upper bound">5</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="519496409747305" type="System">
+                            <param id="0" name="Variable">Completed</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="824248152876034" type="Timer">
+                            <param id="0" name="Text">Timer</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="146206244680358">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="135487391524638" type="System">
+                            <param id="0" name="Variable">Timer</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="230699503232694" type="System">
+                            <param id="0" name="Variable">Completed</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="885939761281252" type="Timer">
+                            <param id="0" name="Text">&quot;Failure!&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="380218996293080" type="System">
+                            <param id="0" name="Variable">Completed</param>
+                            <param id="1" name="Value">-1</param>
+                        </action>
+                        <action behavior="ScrollTo" id="0" name="Shake" sid="936988212193728" type="Camera">
+                            <param id="0" name="Magnitude">40</param>
+                            <param id="1" name="Duration">0.8</param>
+                            <param id="2" name="Mode">0</param>
+                        </action>
+                        <action id="0" name="Play" sid="749389284700080" type="Audio">
+                            <param id="0" name="Audio file">lose</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="949441959080133" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="-26" name="Restart layout" sid="243582955764687" type="System" />
+                        <action id="-21" name="Reset global variables" sid="362484342750543" type="System" />
+                    </actions>
+                </event-block>
+                <event-block sid="877204183524368">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="583078689024511" type="System">
+                            <param id="0" name="Variable">Timer</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="560159767356730" type="System">
+                            <param id="0" name="Variable">Completed</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="812340556874899" type="Timer">
+                            <param id="0" name="Text">&quot;Success!&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="445239412721077">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="313886261942569" type="System">
+                            <param id="0" name="Interval (seconds)">0.02</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="728196770943952" type="System">
+                            <param id="0" name="Variable">Start</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="671412381869184" type="System">
+                            <param id="0" name="Variable">Completed</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="792337618189239" type="System">
+                            <param id="0" name="Variable">Timer</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="708037086461985">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="420474078911982" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-5" name="Set width" sid="950003228925628" type="TimeMeter">
+                            <param id="0" name="Width">Timer</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="497543774466195">
+                    <conditions>
+                        <condition id="-5" name="Compare width" sid="512378269445721" type="TimeMeter">
+                            <param id="0" name="Comparison">3</param>
+                            <param id="1" name="Width">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="578001105010116" type="TimeMeter" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <comment>visual indication of low timer</comment>
+        <event-block sid="219492429714774">
+            <conditions>
+                <condition id="-5" name="Compare width" sid="817486022731416" type="TimeMeter">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="Width">WindowWidth/3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="112606610553643" type="TimeMeter">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

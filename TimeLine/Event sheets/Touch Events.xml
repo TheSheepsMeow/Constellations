@@ -1,0 +1,485 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Touch Events</name>
+    <events>
+        <event-group description="" sid="294697430270124" title="Touch">
+            <sub-events>
+                <event-block sid="419050034002535">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="443199250620409" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="484987653298925" type="Touching">
+                            <param id="0" name="X">Touch.X</param>
+                            <param id="1" name="Y">Touch.Y</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="521648288549364" type="Touching2">
+                            <param id="0" name="X">Touch.X</param>
+                            <param id="1" name="Y">Touch.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="752482561629462">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="704837950154268" type="Touching2">
+                            <param id="0" name="Object">Line</param>
+                        </condition>
+                        <condition id="-8" name="Is boolean instance variable set" sid="780620711772517" type="Line">
+                            <param id="0" name="Instance variable">placed</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="948233759127039" type="System">
+                            <param id="0" name="Variable">Completed</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="469082619392178" type="Point">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action behavior="ScrollTo" id="0" name="Shake" sid="339761193010256" type="Camera">
+                            <param id="0" name="Magnitude">20</param>
+                            <param id="1" name="Duration">0.4</param>
+                            <param id="2" name="Mode">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="411027207040807" type="System">
+                            <param id="0" name="Variable">touched</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="0" name="Play" sid="195934124417597" type="Audio">
+                            <param id="0" name="Audio file">Random 8</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="950959531485568" type="Start">
+                            <param id="0" name="Instance variable">touched</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="593175028041039" type="System">
+                            <param id="0" name="Variable">Timer</param>
+                            <param id="1" name="Value">310</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="887003094447001">
+                            <conditions>
+                                <condition id="-19" name="Pick all" sid="280701526131392" type="System">
+                                    <param id="0" name="Object">Line</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action disabled="1" id="4" name="Set animation" sid="686466931307075" type="Line">
+                                    <param id="0" name="Animation">&quot;Flash&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="422392941420702" type="Line">
+                                    <param id="0" name="Object">Line2</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="934235702278979" type="Line" />
+                                <action id="-13" name="Set boolean" sid="694757644838843" type="Start">
+                                    <param id="0" name="Instance variable">touched</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="970194469695521">
+                    <conditions>
+                        <condition id="2" inverted="1" name="Is in touch" sid="227890643411299" type="Touch" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="389485632955234" type="Touching">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="423148418969084" type="Touching2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="864050537084317" type="Start">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="324606698060382">
+                    <conditions>
+                        <condition id="2" inverted="1" name="Is in touch" sid="833777991277690" type="Touch" />
+                        <condition id="-8" name="Is boolean instance variable set" sid="326356746891673" type="Start">
+                            <param id="0" name="Instance variable">touched</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="451034319218523" type="System">
+                            <param id="0" name="Variable">Start</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="886476174777763" type="System">
+                            <param id="0" name="Variable">Completed</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="314540005102668" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="309863973832936" type="Point">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action behavior="ScrollTo" id="0" name="Shake" sid="939161057344519" type="Camera">
+                            <param id="0" name="Magnitude">20</param>
+                            <param id="1" name="Duration">0.4</param>
+                            <param id="2" name="Mode">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="620922137894579" type="System">
+                            <param id="0" name="Variable">touched</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="0" name="Play" sid="828170415868320" type="Audio">
+                            <param id="0" name="Audio file">Random 8</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="717200446704202" type="Start">
+                            <param id="0" name="Instance variable">touched</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="893137265487785" type="System">
+                            <param id="0" name="Variable">Timer</param>
+                            <param id="1" name="Value">310</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="203008844510948">
+                            <conditions>
+                                <condition id="-19" name="Pick all" sid="829867544086866" type="System">
+                                    <param id="0" name="Object">Line</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action disabled="1" id="4" name="Set animation" sid="784232586736730" type="Line">
+                                    <param id="0" name="Animation">&quot;Flash&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="132580154336142" type="Line">
+                                    <param id="0" name="Object">Line2</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="906785697204297" type="Line" />
+                                <action id="-13" name="Set boolean" sid="556492502617235" type="Start">
+                                    <param id="0" name="Instance variable">touched</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="298240422008542">
+                    <conditions>
+                        <condition id="4" inverted="1" name="Is touching object" sid="916768799220409" type="Touch">
+                            <param id="0" name="Object">Line</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="324200535392682" type="Line">
+                            <param id="0" name="Instance variable">placed</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="177202490292661">
+                    <conditions>
+                        <condition id="2" name="Is in touch" sid="161847123960300" type="Touch" />
+                        <condition id="-14" name="Compare variable" sid="762731269103660" type="System">
+                            <param id="0" name="Variable">Start</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                        <condition id="-8" name="Is boolean instance variable set" sid="626796088899005" type="Start">
+                            <param id="0" name="Instance variable">touched</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="421150164974118" type="System">
+                            <param id="0" name="Variable">Completed</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="218958498775576" type="Touching">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="567456420811746" type="Touching2">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="670771171865520" type="System">
+                            <param id="0" name="Object to create">Line</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">Touch.X</param>
+                            <param id="3" name="Y">Touch.Y</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="346376659680547" type="Line">
+                            <param id="0" name="Angle">random(360)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="797747092557429">
+                    <conditions>
+                        <condition id="4" name="Is touching object" sid="112709381204702" type="Touch">
+                            <param id="0" name="Object">Point</param>
+                        </condition>
+                        <condition id="2" name="Is playing" sid="530248237896771" type="Point">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="768639898635009" type="System">
+                            <param id="0" name="Variable">Start</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                        <condition id="-8" name="Is boolean instance variable set" sid="168379828119117" type="Start">
+                            <param id="0" name="Instance variable">touched</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="764926027135864" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="991107200169246" type="Point">
+                            <param id="0" name="Animation">&quot;Blue&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="931958479673094" type="System">
+                            <param id="0" name="Variable">touched</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="582058752013221" type="Audio">
+                            <param id="0" name="Audio file">Pickup-coin 2</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Pressed state for start activated</comment>
+                <event-block sid="387493013556345">
+                    <conditions>
+                        <condition id="4" name="Is touching object" sid="983185879138966" type="Touch">
+                            <param id="0" name="Object">Start</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="596226721963971" type="System">
+                            <param id="0" name="Variable">Start</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="288462572063848" type="System">
+                            <param id="0" name="Variable">Completed</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="884502067868046" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="285817127434129" type="Start">
+                            <param id="0" name="Instance variable">touched</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="196532543731852" type="Start">
+                            <param id="0" name="Animation">&quot;Pressed&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Pressed state for start activated</comment>
+                <event-block sid="192284826633024">
+                    <conditions>
+                        <condition id="4" name="Is touching object" sid="752894556452435" type="Touch">
+                            <param id="0" name="Object">Start</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="703295397835673" type="System">
+                            <param id="0" name="Variable">Start</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="837739394508358" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="227240650690051" type="System">
+                            <param id="0" name="Variable">Start</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="250319279724646" type="Start">
+                            <param id="0" name="Instance variable">touched</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action behavior="Sine" id="0" name="Set active" sid="324008111706336" type="TimeMeter">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="412859827419357">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="469030607383068" type="System">
+                            <param id="0" name="First value">touched</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">Point.Count</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="481997137676613" type="System">
+                            <param id="0" name="Variable">Completed</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="215343223775192" type="System">
+                            <param id="0" name="First value">LayoutName</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Level 1&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="245525770258283" type="System">
+                            <param id="0" name="Variable">Completed</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="927487330236192" type="Timer">
+                            <param id="0" name="Text">&quot;Success!&quot;</param>
+                        </action>
+                        <action id="0" name="Play" sid="555992024579516" type="Audio">
+                            <param id="0" name="Audio file">Powerup 19</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action behavior="Sine" id="0" name="Set active" sid="768431887562300" type="TimeMeter">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="570775595871963" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action disabled="1" id="-26" name="Restart layout" sid="702398085553906" type="System" />
+                        <action id="-2" name="Go to layout" sid="649389478886420" type="System">
+                            <param id="0" name="Layout">Level 2</param>
+                        </action>
+                        <action id="-21" name="Reset global variables" sid="207904021410256" type="System" />
+                    </actions>
+                </event-block>
+                <event-block sid="488747258277139">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="796624585017881" type="System">
+                            <param id="0" name="First value">touched</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">Point.Count</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="103651888671929" type="System">
+                            <param id="0" name="Variable">Completed</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="513900295207559" type="System">
+                            <param id="0" name="First value">LayoutName</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Level 2&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="765902483910858" type="System">
+                            <param id="0" name="Variable">Completed</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="158741234912395" type="Timer">
+                            <param id="0" name="Text">&quot;Success!&quot;</param>
+                        </action>
+                        <action id="0" name="Play" sid="203324898077524" type="Audio">
+                            <param id="0" name="Audio file">Powerup 19</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action behavior="Sine" id="0" name="Set active" sid="302575183903953" type="TimeMeter">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="284895966578037" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action disabled="1" id="-26" name="Restart layout" sid="102888388879487" type="System" />
+                        <action id="-2" name="Go to layout" sid="178082948649078" type="System">
+                            <param id="0" name="Layout">Level 3</param>
+                        </action>
+                        <action id="-21" name="Reset global variables" sid="431912788522464" type="System" />
+                    </actions>
+                </event-block>
+                <event-block sid="439632936865376">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="413671029025217" type="System">
+                            <param id="0" name="First value">touched</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">Point.Count</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="551669634897224" type="System">
+                            <param id="0" name="Variable">Completed</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="806649787372549" type="System">
+                            <param id="0" name="First value">LayoutName</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Level 3&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="239748010470579" type="System">
+                            <param id="0" name="Variable">Completed</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="568748220706903" type="Timer">
+                            <param id="0" name="Text">&quot;Success!&quot;</param>
+                        </action>
+                        <action id="0" name="Play" sid="961452422354405" type="Audio">
+                            <param id="0" name="Audio file">Powerup 19</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action behavior="Sine" id="0" name="Set active" sid="664519801375085" type="TimeMeter">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="229429718534352" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action disabled="1" id="-26" name="Restart layout" sid="388000192180982" type="System" />
+                        <action id="-2" name="Go to layout" sid="117619521676587" type="System">
+                            <param id="0" name="Layout">Level 1</param>
+                        </action>
+                        <action id="-21" name="Reset global variables" sid="847836968039695" type="System" />
+                    </actions>
+                </event-block>
+                <event-block sid="948801379464901">
+                    <conditions>
+                        <condition id="2" name="Is playing" sid="768605055101752" type="Point">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="480631268991320" type="Point">
+                            <param id="0" name="Instance variable">touched</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="608560735238347">
+                    <conditions>
+                        <condition id="2" name="Is playing" sid="145037799224006" type="Point">
+                            <param id="0" name="Animation">&quot;Blue&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="846216464147983" type="Point">
+                            <param id="0" name="Instance variable">touched</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
