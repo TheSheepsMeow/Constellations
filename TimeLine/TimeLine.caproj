@@ -22,9 +22,7 @@
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
     </used-behaviors>
-    <used-effects>
-        <effect author="Scirra" id="replacecolor">Replace color</effect>
-    </used-effects>
+    <used-effects />
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
@@ -242,11 +240,6 @@
         </object-type>
         <object-type name="Timer" sid="405493620081460">
             <plugin id="Spritefont2" />
-            <effects>
-                <effect-type name="ReplaceColor">
-                    <effect id="replacecolor" />
-                </effect-type>
-            </effects>
             <texture original-source="C:\Users\Josiah\Desktop\Internship\TimeLine\Art\spritefont2.png" />
         </object-type>
         <object-type name="Audio" sid="854472885240555">

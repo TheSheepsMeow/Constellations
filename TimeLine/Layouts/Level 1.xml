@@ -350,19 +350,6 @@
                         <character-spacing>0</character-spacing>
                         <line-height>0</line-height>
                     </properties>
-                    <effect-instances>
-                        <effect-instance type="ReplaceColor">
-                            <parameters>
-                                <b-replace>255</b-replace>
-                                <b-source>0</b-source>
-                                <g-replace>255</g-replace>
-                                <g-source>0</g-source>
-                                <r-replace>255</r-replace>
-                                <r-source>0</r-source>
-                                <tolerance>0.01</tolerance>
-                            </parameters>
-                        </effect-instance>
-                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
