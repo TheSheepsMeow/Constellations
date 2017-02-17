@@ -44,7 +44,7 @@
                     </conditions>
                     <actions>
                         <action id="0" name="Set text" sid="885939761281252" type="Timer">
-                            <param id="0" name="Text">&quot;Failure!&quot;</param>
+                            <param id="0" name="Text">&quot;Oh No!&quot;</param>
                         </action>
                         <action id="-9" name="Set value" sid="380218996293080" type="System">
                             <param id="0" name="Variable">Completed</param>
