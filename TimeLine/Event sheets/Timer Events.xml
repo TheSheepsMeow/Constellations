@@ -56,13 +56,16 @@
                             <param id="2" name="Mode">0</param>
                         </action>
                         <action id="0" name="Play" sid="749389284700080" type="Audio">
-                            <param id="0" name="Audio file">lose</param>
+                            <param id="0" name="Audio file">Press Down 2</param>
                             <param id="2" name="Loop">0</param>
                             <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                         <action id="-16" name="Wait" sid="949441959080133" type="System">
                             <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="6" name="Stop" sid="747355798709323" type="Audio">
+                            <param id="0" name="Tag">&quot;Touch&quot;</param>
                         </action>
                         <action id="-26" name="Restart layout" sid="243582955764687" type="System" />
                         <action id="-21" name="Reset global variables" sid="362484342750543" type="System" />
@@ -110,6 +113,28 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="734100619285112">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="381060196630149" type="System">
+                            <param id="0" name="Variable">Timer</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">100</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="314987674736813" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="313867121357053" type="Audio">
+                            <param id="0" name="Audio file">Low time 2</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-15</param>
+                            <param id="1" name="Tag (optional)">&quot;Warning&quot;</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="925477107286568" type="TimeMeter">
+                            <param id="0" name="Animation">&quot;Warning&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="708037086461985">
                     <conditions>
                         <condition id="-1" name="Every tick" sid="420474078911982" type="System" />
@@ -134,7 +159,7 @@
             </sub-events>
         </event-group>
         <comment>visual indication of low timer</comment>
-        <event-block sid="219492429714774">
+        <event-block disabled="1" sid="219492429714774">
             <conditions>
                 <condition id="-5" name="Compare width" sid="817486022731416" type="TimeMeter">
                     <param id="0" name="Comparison">2</param>

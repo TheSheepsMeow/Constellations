@@ -145,9 +145,14 @@
                 <instance-variable name="placed" sid="508420065585629" type="boolean" />
                 <instance-variable name="red" sid="554745119124081" type="boolean" />
             </instance-variables>
+            <behaviors>
+                <behavior-type name="Sine" sid="672675440047024">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="341801830984990" speed="5">
-                    <frame duration="1" hotspotX="0.517241" hotspotY="0.5" original-source="C:\Users\Pitchfork\Desktop\internship prototypes\timeline assets\line.png">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="959434273644328" speed="5">
+                    <frame duration="1" hotspotX="0.517241" hotspotY="0.5">
                         <collision-poly>
                             <point x="0.158537" y="0.158537" />
                             <point x="0.5" y="0.0121951" />
@@ -160,8 +165,19 @@
                         </collision-poly>
                     </frame>
                 </animation>
-                <animation framecount="1" loop="0" name="Flash" pingpong="0" repeatcount="1" repeatto="0" sid="165811803477994" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                <animation framecount="1" loop="0" name="Light" pingpong="0" repeatcount="1" repeatto="0" sid="341801830984990" speed="5">
+                    <frame duration="1" hotspotX="0.517241" hotspotY="0.5" original-source="C:\Users\Pitchfork\Desktop\internship prototypes\timeline assets\line.png">
+                        <collision-poly>
+                            <point x="0.158537" y="0.158537" />
+                            <point x="0.5" y="0.0121951" />
+                            <point x="0.841463" y="0.158537" />
+                            <point x="0.987805" y="0.5" />
+                            <point x="0.841463" y="0.841463" />
+                            <point x="0.5" y="0.987805" />
+                            <point x="0.158537" y="0.841463" />
+                            <point x="0.0121951" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -208,7 +224,7 @@
                 <instance-variable name="red" sid="531008979616262" type="boolean" />
             </instance-variables>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Flash" pingpong="0" repeatcount="1" repeatto="0" sid="783759902471970" speed="5">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="783759902471970" speed="5">
                     <frame duration="1" hotspotX="0.517241" hotspotY="0.5" original-source="C:\Users\Pitchfork\Desktop\internship prototypes\timeline assets\line_bad (1).png">
                         <collision-poly>
                             <point x="0.158537" y="0.158537" />
@@ -231,7 +247,7 @@
                     <effect id="replacecolor" />
                 </effect-type>
             </effects>
-            <texture />
+            <texture original-source="C:\Users\Josiah\Desktop\Internship\TimeLine\Art\SpriteFont_IndieFlower_Bold_(36)_[0,0,0,0]_34x56.png" />
         </object-type>
         <object-type name="Audio" sid="854472885240555">
             <plugin id="Audio" />
@@ -244,7 +260,10 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="156795505960182" speed="0">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="156795505960182" speed="6">
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" />
+                </animation>
+                <animation framecount="2" loop="1" name="Warning" pingpong="0" repeatcount="1" repeatto="0" sid="192001770392636" speed="12">
                     <frame duration="1" hotspotX="0" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0" hotspotY="0.5" />
                 </animation>
@@ -292,20 +311,40 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="ObstacleStar" sid="167798717744696">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="165943599636693">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="204494186172767" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.129808" y="0.125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.860577" y="0.117789" />
+                            <point x="1" y="0.5" />
+                            <point x="0.877404" y="0.860577" />
+                            <point x="0.5" y="1" />
+                            <point x="0.129808" y="0.862981" />
+                            <point x="0" y="0.497596" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>Level 1.xml</layout>
-        <layout>Level 2.xml</layout>
-        <layout>Level 3.xml</layout>
         <layout>Menu.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event Sheet Level 1.xml</event-sheet>
         <event-sheet>Touch Events.xml</event-sheet>
         <event-sheet>Timer Events.xml</event-sheet>
-        <event-sheet>Event Sheet Level 2.xml</event-sheet>
-        <event-sheet>Event Sheet Level 3.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="10">
@@ -337,6 +376,66 @@
         <file name="Random 8.ogg" />
         <file name="lose.m4a" />
         <file name="lose.ogg" />
+        <file name="win.m4a" />
+        <file name="win.ogg" />
+        <file name="Star 1.m4a" />
+        <file name="Star 1.ogg" />
+        <file name="Star 2.m4a" />
+        <file name="Star 2.ogg" />
+        <file name="Star 3.m4a" />
+        <file name="Star 3.ogg" />
+        <file name="Star 4.m4a" />
+        <file name="Star 4.ogg" />
+        <file name="Star 5.m4a" />
+        <file name="Star 5.ogg" />
+        <file name="Star 6.m4a" />
+        <file name="Star 6.ogg" />
+        <file name="Star 7.m4a" />
+        <file name="Star 7.ogg" />
+        <file name="Star 8.m4a" />
+        <file name="Star 8.ogg" />
+        <file name="Complete game jingle.m4a" />
+        <file name="Complete game jingle.ogg" />
+        <file name="Complete level jingle 2.m4a" />
+        <file name="Complete level jingle 2.ogg" />
+        <file name="Obstacle ound 1.m4a" />
+        <file name="Obstacle ound 1.ogg" />
+        <file name="Obstacle sound 2.m4a" />
+        <file name="Obstacle sound 2.ogg" />
+        <file name="Loe yimr 1 and 2.m4a" />
+        <file name="Loe yimr 1 and 2.ogg" />
+        <file name="Low time 1.m4a" />
+        <file name="Low time 1.ogg" />
+        <file name="Low time 2.m4a" />
+        <file name="Low time 2.ogg" />
+        <file name="Menu sound 1.m4a" />
+        <file name="Menu sound 1.ogg" />
+        <file name="Menu sound 2.m4a" />
+        <file name="Menu sound 2.ogg" />
+        <file name="Menu sound 3.m4a" />
+        <file name="Menu sound 3.ogg" />
+        <file name="Menu sound 4.m4a" />
+        <file name="Menu sound 4.ogg" />
+        <file name="Menu sound 5.m4a" />
+        <file name="Menu sound 5.ogg" />
+        <file name="Menu sound 6.m4a" />
+        <file name="Menu sound 6.ogg" />
+        <file name="Held down 1.m4a" />
+        <file name="Held down 1.ogg" />
+        <file name="Let go 1.m4a" />
+        <file name="Let go 1.ogg" />
+        <file name="Let go 2.m4a" />
+        <file name="Let go 2.ogg" />
+        <file name="Press Down 2.m4a" />
+        <file name="Press Down 2.ogg" />
+        <file name="Press Down 3.m4a" />
+        <file name="Press Down 3.ogg" />
+        <file name="Press Down 4.m4a" />
+        <file name="Press Down 4.ogg" />
+        <file name="Press Down 5.m4a" />
+        <file name="Press Down 5.ogg" />
+        <file name="Press Down.m4a" />
+        <file name="Press Down.ogg" />
     </sounds-folder>
     <music-folder />
     <files-folder>
