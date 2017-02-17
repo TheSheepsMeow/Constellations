@@ -247,7 +247,7 @@
                     <effect id="replacecolor" />
                 </effect-type>
             </effects>
-            <texture original-source="C:\Users\Josiah\Desktop\Internship\TimeLine\Art\SpriteFont_IndieFlower_Bold_(36)_[0,0,0,0]_34x56.png" />
+            <texture original-source="C:\Users\Josiah\Desktop\Internship\TimeLine\Art\spritefont2.png" />
         </object-type>
         <object-type name="Audio" sid="854472885240555">
             <plugin id="Audio" />
