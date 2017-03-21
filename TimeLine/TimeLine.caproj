@@ -11,6 +11,7 @@
     <saved-with-version>23900</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="NinePatch" version="1">9-patch</plugin>
         <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
@@ -325,6 +326,103 @@
                             <point x="0" y="0.497596" />
                         </collision-poly>
                     </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="homeButton" sid="781581916998603">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Unpressed" pingpong="0" repeatcount="1" repeatto="0" sid="717490907153315" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Josiah\Desktop\Internship\TimeLine\Art\HomeButton.png">
+                        <collision-poly>
+                            <point x="0.557143" y="0.0135135" />
+                            <point x="1" y="0.121622" />
+                            <point x="0.971429" y="0.621622" />
+                            <point x="0.171429" y="0.121622" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Pressed" pingpong="0" repeatcount="1" repeatto="0" sid="942015753849293" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.867181" />
+                            <point x="0.262041" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="muteButton" sid="542765819450282">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="unmuted" pingpong="0" repeatcount="1" repeatto="0" sid="754124620816928" speed="5">
+                    <frame duration="1" hotspotX="0.507042" hotspotY="0.5" original-source="C:\Users\Josiah\Desktop\Internship\TimeLine\Art\VolumeButton.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="muted" pingpong="0" repeatcount="1" repeatto="0" sid="173168752592852" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Pitchfork\Desktop\mute1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="backButton" sid="997329733010015">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Unpressed" pingpong="0" repeatcount="1" repeatto="0" sid="936460363421719" speed="0">
+                    <frame duration="1" hotspotX="0.507042" hotspotY="0.5" original-source="C:\Users\Josiah\Desktop\Internship\TimeLine\Art\BackButton.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="Pressed" pingpong="0" repeatcount="1" repeatto="0" sid="850191646367425" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="colorpallette" sid="389478873310249">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="326058443674319" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PlayButton" sid="668615992214374">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Unpressed" pingpong="0" repeatcount="1" repeatto="0" sid="504170087449752" speed="5">
+                    <frame duration="1" hotspotX="0.50116" hotspotY="0.502415" original-source="C:\Users\Josiah\Desktop\Internship\TimeLine\Art\PlayButton.png">
+                        <collision-poly>
+                            <point x="0.00232019" y="0" />
+                            <point x="0.49884" y="0" />
+                            <point x="0.99768" y="0" />
+                            <point x="0.49884" y="0.995169" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Pressed" pingpong="0" repeatcount="1" repeatto="0" sid="130303889938157" speed="5">
+                    <frame duration="1" hotspotX="0.50116" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.496923" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.496923" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ad" sid="608228722872660">
+            <plugin id="NinePatch" />
+            <texture />
+        </object-type>
+        <object-type name="Text" sid="504674712898582">
+            <plugin id="Spritefont2" />
+            <texture original-source="C:\Users\Josiah\Desktop\Internship\TimeLine\Art\spritefont2.png" />
+        </object-type>
+        <object-type name="thesheepsmeow" sid="155776177387765">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="670114186555065" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Pitchfork\Desktop\sheep0.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Pitchfork\Desktop\sheep1.png" />
                 </animation>
             </animation-folder>
         </object-type>
