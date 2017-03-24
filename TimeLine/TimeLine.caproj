@@ -415,7 +415,7 @@
         </object-type>
         <object-type name="Text" sid="504674712898582">
             <plugin id="Spritefont2" />
-            <texture original-source="C:\Users\Josiah\Desktop\Internship\TimeLine\Art\spritefont2.png" />
+            <texture original-source="C:\Users\Josiah\Desktop\Internship\TimeLine\Art\SpriteFont_CutiveMono_Bold_(36)_[0,0,0,6]_31x44.png" />
         </object-type>
         <object-type name="thesheepsmeow" sid="155776177387765">
             <plugin id="Sprite" />
@@ -423,6 +423,25 @@
                 <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="670114186555065" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Pitchfork\Desktop\sheep0.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Pitchfork\Desktop\sheep1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Logo" sid="802555765397148">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="502353019997569" speed="5">
+                    <frame duration="1" hotspotX="0.500347" hotspotY="0.502183" original-source="C:\Users\Josiah\Desktop\Internship\TimeLine\Art\Logo.png">
+                        <collision-poly>
+                            <point x="0.0402498" y="0.253275" />
+                            <point x="0.499653" y="0.148472" />
+                            <point x="0.953505" y="0.292576" />
+                            <point x="0.965996" y="0.497817" />
+                            <point x="0.961832" y="0.759825" />
+                            <point x="0.499653" y="0.786026" />
+                            <point x="0.0430257" y="0.729258" />
+                            <point x="0.0277585" y="0.497817" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>

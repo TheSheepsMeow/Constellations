@@ -430,11 +430,11 @@
                 </instance>
                 <instance type="Text" uid="29">
                     <properties>
-                        <character-width>38</character-width>
-                        <character-height>60</character-height>
+                        <character-width>31</character-width>
+                        <character-height>44</character-height>
                         <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
                         <text>GJ Lee, Brian S. Chung, Josiah Hunt, Warren Savage</text>
-                        <scale>0.25</scale>
+                        <scale>0.3</scale>
                         <initial-visibility>Visible</initial-visibility>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -446,10 +446,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>160</x>
+                        <x>160.93132019</x>
                         <y>410</y>
                         <z>0</z>
-                        <width>281.901885986</width>
+                        <width>266.378479004</width>
                         <height>37.496398926</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
@@ -460,8 +460,8 @@
                 </instance>
                 <instance type="Text" uid="28">
                     <properties>
-                        <character-width>38</character-width>
-                        <character-height>60</character-height>
+                        <character-width>31</character-width>
+                        <character-height>44</character-height>
                         <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
                         <text>MORE GAMES</text>
                         <scale>0.6</scale>
@@ -510,17 +510,17 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Text" uid="31">
+                <instance type="Text" uid="32">
                     <properties>
-                        <character-width>38</character-width>
-                        <character-height>60</character-height>
+                        <character-width>31</character-width>
+                        <character-height>44</character-height>
                         <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
-                        <text>[TITLE]</text>
-                        <scale>1</scale>
+                        <text>Connect The Stars</text>
+                        <scale>0.5</scale>
                         <initial-visibility>Visible</initial-visibility>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
                         <wrapping>Word</wrapping>
                         <character-spacing>0</character-spacing>
                         <line-height>0</line-height>
@@ -528,14 +528,36 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>29</x>
-                        <y>97</y>
+                        <x>160.841522217</x>
+                        <y>153.827087402</y>
                         <z>0</z>
-                        <width>281</width>
+                        <width>340.503265381</width>
                         <height>89</height>
                         <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Logo" uid="33">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>160</x>
+                        <y>125</y>
+                        <z>0</z>
+                        <width>325.415405273</width>
+                        <height>51.714176178</height>
+                        <depth>0</depth>
+                        <hotspotX>0.500346959</hotspotX>
+                        <hotspotY>0.502183378</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

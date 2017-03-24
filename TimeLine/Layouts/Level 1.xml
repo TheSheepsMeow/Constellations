@@ -337,8 +337,8 @@
             <instances>
                 <instance type="Timer" uid="18">
                     <properties>
-                        <character-width>38</character-width>
-                        <character-height>60</character-height>
+                        <character-width>31</character-width>
+                        <character-height>44</character-height>
                         <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
                         <text></text>
                         <scale>1</scale>
