@@ -1675,8 +1675,8 @@
                         <action id="-3" name="Create object" sid="269257849952731" type="System">
                             <param id="0" name="Object to create">bg_stars</param>
                             <param id="1" name="Layer">0</param>
-                            <param id="2" name="X">random(25, WindowWidth-25)</param>
-                            <param id="3" name="Y">random(25, WindowHeight-25)</param>
+                            <param id="2" name="X">random(25, 295)</param>
+                            <param id="3" name="Y">random(25, 455)</param>
                         </action>
                         <action id="9" name="Set scale" sid="432803109614302" type="bg_stars">
                             <param id="0" name="Scale">random(0.35, 1)</param>
@@ -1688,6 +1688,15 @@
                             <param id="0" name="Angle">random(360)</param>
                         </action>
                         <action id="-24" name="Move to top" sid="464249820548858" type="bg_stars" />
+                        <action behavior="Sine" id="3" name="Set movement" sid="125644596690551" type="bg_stars">
+                            <param id="0" name="Movement">2</param>
+                        </action>
+                        <action behavior="Sine" id="2" name="Set magnitude" sid="143481444206160" type="bg_stars">
+                            <param id="0" name="Magnitude">2.5</param>
+                        </action>
+                        <action behavior="Sine" id="5" name="Set cycle position" sid="821669568752517" type="bg_stars">
+                            <param id="0" name="Cycle position">random(0, 1)</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="277037425504888">
@@ -1699,11 +1708,11 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-3" name="Create object" sid="180856949593360" type="System">
+                        <action id="-3" name="Create object" sid="592287719405320" type="System">
                             <param id="0" name="Object to create">nebula</param>
                             <param id="1" name="Layer">0</param>
-                            <param id="2" name="X">random(100, WindowWidth-100)</param>
-                            <param id="3" name="Y">random(200, WindowHeight-200)</param>
+                            <param id="2" name="X">random(100, 220)</param>
+                            <param id="3" name="Y">random(200, 280)</param>
                         </action>
                         <action id="-8" name="Set angle" sid="993736011186521" type="nebula">
                             <param id="0" name="Angle">choose(30,60,45)</param>

@@ -2,7 +2,7 @@
 <c2layout>
     <name>Menu</name>
     <sid>358997618398544</sid>
-    <event-sheet></event-sheet>
+    <event-sheet>Title</event-sheet>
     <size>
         <width>1708</width>
         <height>960</height>
@@ -47,6 +47,65 @@
                         <depth>0</depth>
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="bg_stars" uid="2">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Sine">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>4</period>
+                                <period-random>0</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0</period-offset-random>
+                                <magnitude>2.5</magnitude>
+                                <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-104</x>
+                        <y>20</y>
+                        <z>0</z>
+                        <width>17</width>
+                        <height>18</height>
+                        <depth>0</depth>
+                        <hotspotX>0.529411793</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="starOutline" uid="34">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>62.224601746</x>
+                        <y>-139.031311035</y>
+                        <z>0</z>
+                        <width>87.857841492</width>
+                        <height>87.857841492</height>
+                        <depth>0</depth>
+                        <hotspotX>0.506493509</hotspotX>
+                        <hotspotY>0.506493509</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -160,8 +219,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-282</x>
-                        <y>-139</y>
+                        <x>-59.884304047</x>
+                        <y>-151.481964111</y>
                         <z>0</z>
                         <width>77</width>
                         <height>77</height>
@@ -302,8 +361,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>417</x>
-                        <y>-78</y>
+                        <x>433</x>
+                        <y>-86</y>
                         <z>0</z>
                         <width>52.5</width>
                         <height>55.5</height>
@@ -393,11 +452,11 @@
                         <x>160</x>
                         <y>330</y>
                         <z>0</z>
-                        <width>223.26524353</width>
-                        <height>107.229484558</height>
+                        <width>230.517471313</width>
+                        <height>114.481719971</height>
                         <depth>0</depth>
-                        <hotspotX>0.501160085</hotspotX>
-                        <hotspotY>0.502415478</hotspotY>
+                        <hotspotX>0.501123607</hotspotX>
+                        <hotspotY>0.502262473</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

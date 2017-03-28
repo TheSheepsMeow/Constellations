@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Title</name>
+    <events>
+        <event-block sid="619854818242829">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="964989036901009" type="System">
+                    <param id="0" name="First value">bg_stars.Count</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Second value">25</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="740181413180573" type="System">
+                    <param id="0" name="Object to create">bg_stars</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">random(25, 295)</param>
+                    <param id="3" name="Y">random(25, 455)</param>
+                </action>
+                <action id="9" name="Set scale" sid="976243827114574" type="bg_stars">
+                    <param id="0" name="Scale">random(0.35, 1)</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="987996688855437" type="bg_stars">
+                    <param id="0" name="Opacity">random(45,80)</param>
+                </action>
+                <action id="-8" name="Set angle" sid="776985423283797" type="bg_stars">
+                    <param id="0" name="Angle">random(360)</param>
+                </action>
+                <action id="-24" name="Move to top" sid="500266463195793" type="bg_stars" />
+                <action behavior="Sine" id="3" name="Set movement" sid="750334018343461" type="bg_stars">
+                    <param id="0" name="Movement">2</param>
+                </action>
+                <action behavior="Sine" id="2" name="Set magnitude" sid="383365603230173" type="bg_stars">
+                    <param id="0" name="Magnitude">2.5</param>
+                </action>
+                <action behavior="Sine" id="5" name="Set cycle position" sid="855314558528691" type="bg_stars">
+                    <param id="0" name="Cycle position">random(0, 1)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="208785924944880">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="469459441236916" type="System">
+                    <param id="0" name="First value">nebula.Count</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Second value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="410760993260843" type="System">
+                    <param id="0" name="Object to create">nebula</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">random(100, 220)</param>
+                    <param id="3" name="Y">random(200, 280)</param>
+                </action>
+                <action id="-8" name="Set angle" sid="252264318473547" type="nebula">
+                    <param id="0" name="Angle">choose(30,60,45)</param>
+                </action>
+                <action id="9" name="Set scale" sid="803514964216384" type="nebula">
+                    <param id="0" name="Scale">random(0.75, 1.5)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="230748380063467">
+            <conditions>
+                <condition id="17" name="On tap object" sid="751423478320434" type="Touch">
+                    <param id="0" name="Object">PlayButton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="942841152837926" type="Audio">
+                    <param id="0" name="Audio file">Menu sound 4</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="633955306758440" type="PlayButton">
+                    <param id="0" name="Animation">&quot;Pressed&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="257067316054589" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="4" name="Set animation" sid="451167837217649" type="PlayButton">
+                    <param id="0" name="Animation">&quot;Unpressed&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="912165250812180" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="584729005572286" type="System">
+                    <param id="0" name="Layout">Level 1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="592893954218640">
+            <conditions>
+                <condition id="17" name="On tap object" sid="500718432963187" type="Touch">
+                    <param id="0" name="Object">muteButton</param>
+                </condition>
+                <condition id="2" name="Is playing" sid="413325468393247" type="muteButton">
+                    <param id="0" name="Animation">&quot;unmuted&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="542317408091825" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+                <action id="4" name="Set animation" sid="606490161032542" type="muteButton">
+                    <param id="0" name="Animation">&quot;muted&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="8" name="Set silent" sid="749300642110628" type="Audio">
+                    <param id="0" name="Mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="811643856470392">
+            <conditions>
+                <condition id="17" name="On tap object" sid="379632240832598" type="Touch">
+                    <param id="0" name="Object">muteButton</param>
+                </condition>
+                <condition id="2" name="Is playing" sid="116297435289150" type="muteButton">
+                    <param id="0" name="Animation">&quot;muted&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="458061571114491" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+                <action id="8" name="Set silent" sid="397429625558784" type="Audio">
+                    <param id="0" name="Mode">1</param>
+                </action>
+                <action id="0" name="Play" sid="795340999557160" type="Audio">
+                    <param id="0" name="Audio file">Press Down 5</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="120802099745587" type="muteButton">
+                    <param id="0" name="Animation">&quot;unmuted&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="837967328430164">
+            <conditions>
+                <condition id="3" name="Is silent" sid="665794105866265" type="Audio" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="303957581460489" type="muteButton">
+                    <param id="0" name="Animation">&quot;muted&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="228742933143066">
+            <conditions>
+                <condition id="3" inverted="1" name="Is silent" sid="508455362815168" type="Audio" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="568306498453240" type="muteButton">
+                    <param id="0" name="Animation">&quot;unmuted&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

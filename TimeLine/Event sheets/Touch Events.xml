@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Touch Events</name>
     <events>
+        <variable constant="0" name="Pressed" sid="766092664620716" static="0" type="number">0</variable>
         <event-group description="" sid="294697430270124" title="Touch">
             <sub-events>
                 <event-block sid="419050034002535">
@@ -298,6 +299,16 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <event-block sid="672731893282650">
+                            <conditions>
+                                <condition id="-19" name="Pick all" sid="761117640705322" type="System">
+                                    <param id="0" name="Object">starOutline</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="629369394611619" type="starOutline" />
+                            </actions>
+                        </event-block>
                     </sub-events>
                 </event-block>
                 <event-block sid="298240422008542">
@@ -342,10 +353,19 @@
                         </action>
                         <action id="7" name="Play (by name)" sid="582058752013221" type="Audio">
                             <param id="0" name="Folder">0</param>
-                            <param id="1" name="Audio file name">choose(&quot;Star 1&quot;, &quot;Star 2&quot;, &quot;Star 3&quot;, &quot;Star 4&quot;, &quot;Star 5&quot;, &quot;Star 6&quot;, &quot;Star 7&quot;, &quot;Star 8&quot;)</param>
+                            <param id="1" name="Audio file name">choose(&quot;Star 1&quot;, &quot;Star 2&quot;, &quot;Star 3&quot;, &quot;Star 4&quot;, &quot;Star 5&quot;, &quot;Star 6&quot;, &quot;Star 7&quot;, &quot;Star 8&quot;, &quot;Star 9&quot;, &quot;Star 10&quot;, &quot;Star 11&quot;, &quot;Star 12&quot;, &quot;Star 13&quot;, &quot;Star 14&quot;, &quot;Star 15&quot;, &quot;Star 16&quot;)</param>
                             <param id="3" name="Loop">0</param>
                             <param id="4" name="Volume">0</param>
                             <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="166013588448182" type="Point">
+                            <param id="0" name="Object">starOutline</param>
+                            <param id="1" name="Layer">&quot;Background&quot;</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-7" name="Set size" sid="858614699285444" type="starOutline">
+                            <param id="0" name="Width">Point.Width + 5</param>
+                            <param id="1" name="Height">Point.Height + 5</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1008,17 +1028,9 @@
                                     <param id="0" name="Animation">&quot;Default&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
-                                <action id="-16" name="Wait" sid="860758105495247" type="System">
-                                    <param id="0" name="Seconds">3</param>
-                                </action>
-                                <action id="-21" name="Reset global variables" sid="480943622210251" type="System" />
-                                <action id="-9" name="Set value" sid="684715271993616" type="System">
-                                    <param id="0" name="Variable">Level</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                                <action id="-26" name="Restart layout" sid="747403723183812" type="System" />
-                                <action id="6" name="Stop" sid="810569115682344" type="Audio">
-                                    <param id="0" name="Tag">&quot;Touch&quot;</param>
+                                <action id="-4" name="Set layer visible" sid="236264052029903" type="System">
+                                    <param id="0" name="Layer">&quot;Buttons&quot;</param>
+                                    <param id="1" name="Visibility">1</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -1047,6 +1059,126 @@
                         <action id="-13" name="Set boolean" sid="846216464147983" type="Point">
                             <param id="0" name="Instance variable">touched</param>
                             <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="807436945585081" title="Play Again?">
+            <sub-events>
+                <event-block sid="107758524121843">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="820681528893479" type="Touch">
+                            <param id="0" name="Object">backButton</param>
+                        </condition>
+                        <condition id="-9" name="Layer is visible" sid="151932294561583" type="System">
+                            <param id="0" name="Layer">&quot;Buttons&quot;</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="971206700938122" type="System">
+                            <param id="0" name="Variable">Pressed</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="378652407697828" type="System">
+                            <param id="0" name="Seconds">0.01</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="391785619627180" type="System">
+                            <param id="0" name="Variable">Pressed</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="562382265720110" type="Audio">
+                            <param id="0" name="Audio file">Menu sound 4</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="150297390524113" type="backButton">
+                            <param id="0" name="Animation">&quot;Pressed&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="409819913401429" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="975384301927177" type="backButton">
+                            <param id="0" name="Animation">&quot;Unpressed&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="630620288960012" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="965823640862984" type="System">
+                            <param id="0" name="Layer">&quot;Buttons&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-21" name="Reset global variables" sid="119554911611090" type="System" />
+                        <action id="-9" name="Set value" sid="446260006967772" type="System">
+                            <param id="0" name="Variable">Level</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-26" name="Restart layout" sid="291930263125133" type="System" />
+                        <action id="6" name="Stop" sid="566000965820056" type="Audio">
+                            <param id="0" name="Tag">&quot;Touch&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="157020371587407">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="797952867904791" type="Touch">
+                            <param id="0" name="Object">homeButton</param>
+                        </condition>
+                        <condition id="-9" name="Layer is visible" sid="643388164202580" type="System">
+                            <param id="0" name="Layer">&quot;Buttons&quot;</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="439657637033147" type="System">
+                            <param id="0" name="Variable">Pressed</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="474216005569298" type="System">
+                            <param id="0" name="Seconds">0.01</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="748219653821997" type="System">
+                            <param id="0" name="Variable">Pressed</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="964242437180570" type="Audio">
+                            <param id="0" name="Audio file">Menu sound 1</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="176142451155307" type="homeButton">
+                            <param id="0" name="Animation">&quot;Pressed&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="214682466673863" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="397132276533205" type="homeButton">
+                            <param id="0" name="Animation">&quot;Unpressed&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="993738749329080" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="878815559003713" type="System">
+                            <param id="0" name="Layer">&quot;Buttons&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-21" name="Reset global variables" sid="159591906542279" type="System" />
+                        <action id="-9" name="Set value" sid="144737301934183" type="System">
+                            <param id="0" name="Variable">Level</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="446397281850231" type="System">
+                            <param id="0" name="Layout">Menu</param>
+                        </action>
+                        <action id="6" name="Stop" sid="646025556401577" type="Audio">
+                            <param id="0" name="Tag">&quot;Touch&quot;</param>
                         </action>
                     </actions>
                 </event-block>
