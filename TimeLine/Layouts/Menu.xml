@@ -492,8 +492,8 @@
                         <character-width>31</character-width>
                         <character-height>44</character-height>
                         <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
-                        <text>GJ Lee, Brian S. Chung, Josiah Hunt, Warren Savage</text>
-                        <scale>0.3</scale>
+                        <text>GJ Lee, Josiah Hunt, Warren Savage, Brian S. Chung, Rebeca Jimenez</text>
+                        <scale>0.29</scale>
                         <initial-visibility>Visible</initial-visibility>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -505,11 +505,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>160.93132019</x>
-                        <y>410</y>
+                        <x>161.906921387</x>
+                        <y>410.523223877</y>
                         <z>0</z>
-                        <width>266.378479004</width>
-                        <height>37.496398926</height>
+                        <width>326.898376465</width>
+                        <height>40.888763428</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
