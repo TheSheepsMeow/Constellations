@@ -19,6 +19,7 @@
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
         <behavior author="Scirra" id="Rotate" version="1">Rotate</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
@@ -34,14 +35,14 @@
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
-    <use-loader-layout>0</use-loader-layout>
+    <use-loader-layout>1</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
         <prop name="Downscaling">Medium quality</prop>
         <prop name="Enable WebGL">On</prop>
         <prop name="Fullscreen in browser">Letterbox scale</prop>
         <prop name="Fullscreen scaling">High quality</prop>
-        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Loader style">Nothing (not recommended)</prop>
         <prop name="Orientations">Any</prop>
         <prop name="Pause on unfocus">No</prop>
         <prop name="Physics engine">Box2D asm.js</prop>
@@ -790,21 +791,199 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="TiledBackground" sid="988865383893276">
+        <object-type name="TimerMeter" sid="988865383893276">
             <plugin id="TiledBg" />
-            <texture original-source="C:\Users\Josiah\Desktop\Internship\MeteorTrail.png" />
+            <texture original-source="C:\Users\Josiah\Desktop\Internship\TimeLine\Art\MeteorTrail.png" />
+        </object-type>
+        <object-type name="meteor" sid="305634062142244">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Rotate" sid="379667083801820">
+                    <behavior id="Rotate" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="442342787325276">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="745013512073946" speed="5">
+                    <frame duration="1" hotspotX="0.494624" hotspotY="0.497207" original-source="C:\Users\Josiah\Desktop\Internship\Meteor.png">
+                        <collision-poly>
+                            <point x="0.112903" y="0.134078" />
+                            <point x="0.494624" y="0.0111732" />
+                            <point x="0.849462" y="0.162011" />
+                            <point x="0.978495" y="0.497207" />
+                            <point x="0.870968" y="0.854749" />
+                            <point x="0.494624" y="0.988827" />
+                            <point x="0.155914" y="0.815642" />
+                            <point x="0.0215054" y="0.497207" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="1" name="Flash" pingpong="0" repeatcount="1" repeatto="0" sid="554363448173641" speed="12">
+                    <frame duration="1" hotspotX="0.489247" hotspotY="0.49162" original-source="C:\Users\Josiah\Desktop\Internship\TimeLine\Art\Meteor2.png">
+                        <collision-poly>
+                            <point x="0.0450919" y="0.0801785" />
+                            <point x="0.48838" y="0" />
+                            <point x="0.900451" y="0.112013" />
+                            <point x="1" y="0.494023" />
+                            <point x="0.925425" y="0.901501" />
+                            <point x="0.48838" y="1" />
+                            <point x="0.0950399" y="0.856933" />
+                            <point x="0" y="0.494023" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.489247" hotspotY="0.49162" original-source="C:\Users\Josiah\Desktop\Internship\Meteor.png">
+                        <collision-poly>
+                            <point x="0.0450919" y="0.0801785" />
+                            <point x="0.48838" y="0" />
+                            <point x="0.900451" y="0.112013" />
+                            <point x="1" y="0.494023" />
+                            <point x="0.925425" y="0.901501" />
+                            <point x="0.48838" y="1" />
+                            <point x="0.0950399" y="0.856933" />
+                            <point x="0" y="0.494023" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="meteorStop" sid="389121241512976">
+            <plugin id="Particles" />
+            <texture original-source="C:\Users\Josiah\Desktop\Internship\Meteor.png" />
+        </object-type>
+        <object-type name="bgSheeps" sid="536580827011427">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Pitchfork\Desktop\tilinesheeps.png" />
+        </object-type>
+        <object-type name="loaderProgress" sid="931733488380063">
+            <plugin id="NinePatch" />
+            <texture />
+        </object-type>
+        <object-type name="textTitle" sid="512949848029204">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
+        <object-type name="textDebug" sid="735967991407578">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
+        <object-type name="meteorFade" sid="658701903283578">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="296259342590706">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="197258469794105" speed="5">
+                    <frame duration="1" hotspotX="0.494624" hotspotY="0.497207" original-source="C:\Users\Josiah\Desktop\Internship\Meteor.png">
+                        <collision-poly>
+                            <point x="0.112903" y="0.134078" />
+                            <point x="0.494624" y="0.0111732" />
+                            <point x="0.849462" y="0.162011" />
+                            <point x="0.978495" y="0.497207" />
+                            <point x="0.870968" y="0.854749" />
+                            <point x="0.494624" y="0.988827" />
+                            <point x="0.155914" y="0.815642" />
+                            <point x="0.0215054" y="0.497207" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="1" name="Flash" pingpong="0" repeatcount="1" repeatto="0" sid="113090239616792" speed="12">
+                    <frame duration="1" hotspotX="0.489247" hotspotY="0.49162" original-source="C:\Users\Josiah\Desktop\Internship\TimeLine\Art\Meteor2.png">
+                        <collision-poly>
+                            <point x="0.0450919" y="0.0801785" />
+                            <point x="0.48838" y="0" />
+                            <point x="0.900451" y="0.112013" />
+                            <point x="1" y="0.494023" />
+                            <point x="0.925425" y="0.901501" />
+                            <point x="0.48838" y="1" />
+                            <point x="0.0950399" y="0.856933" />
+                            <point x="0" y="0.494023" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.489247" hotspotY="0.49162" original-source="C:\Users\Josiah\Desktop\Internship\Meteor.png">
+                        <collision-poly>
+                            <point x="0.0450919" y="0.0801785" />
+                            <point x="0.48838" y="0" />
+                            <point x="0.900451" y="0.112013" />
+                            <point x="1" y="0.494023" />
+                            <point x="0.925425" y="0.901501" />
+                            <point x="0.48838" y="1" />
+                            <point x="0.0950399" y="0.856933" />
+                            <point x="0" y="0.494023" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="meteor2" sid="770708943653977">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Rotate" sid="578686548300585">
+                    <behavior id="Rotate" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="867946497887914">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="316394322649783" speed="5">
+                    <frame duration="1" hotspotX="0.494624" hotspotY="0.497207" original-source="C:\Users\Josiah\Desktop\Internship\Meteor.png">
+                        <collision-poly>
+                            <point x="0.112903" y="0.134078" />
+                            <point x="0.494624" y="0.0111732" />
+                            <point x="0.849462" y="0.162011" />
+                            <point x="0.978495" y="0.497207" />
+                            <point x="0.870968" y="0.854749" />
+                            <point x="0.494624" y="0.988827" />
+                            <point x="0.155914" y="0.815642" />
+                            <point x="0.0215054" y="0.497207" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="1" name="Flash" pingpong="0" repeatcount="1" repeatto="0" sid="655342376925870" speed="12">
+                    <frame duration="1" hotspotX="0.489247" hotspotY="0.49162" original-source="C:\Users\Josiah\Desktop\Internship\TimeLine\Art\Meteor2.png">
+                        <collision-poly>
+                            <point x="0.0450919" y="0.0801785" />
+                            <point x="0.48838" y="0" />
+                            <point x="0.900451" y="0.112013" />
+                            <point x="1" y="0.494023" />
+                            <point x="0.925425" y="0.901501" />
+                            <point x="0.48838" y="1" />
+                            <point x="0.0950399" y="0.856933" />
+                            <point x="0" y="0.494023" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.489247" hotspotY="0.49162" original-source="C:\Users\Josiah\Desktop\Internship\Meteor.png">
+                        <collision-poly>
+                            <point x="0.0450919" y="0.0801785" />
+                            <point x="0.48838" y="0" />
+                            <point x="0.900451" y="0.112013" />
+                            <point x="1" y="0.494023" />
+                            <point x="0.925425" y="0.901501" />
+                            <point x="0.48838" y="1" />
+                            <point x="0.0950399" y="0.856933" />
+                            <point x="0" y="0.494023" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>Level 1.xml</layout>
         <layout>Menu.xml</layout>
+        <layout>LoaderLayout.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event Sheet Level 1.xml</event-sheet>
         <event-sheet>Touch Events.xml</event-sheet>
         <event-sheet>Timer Events.xml</event-sheet>
         <event-sheet>Title.xml</event-sheet>
+        <event-sheet>Loader.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="10">

@@ -163,5 +163,71 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="930456031131435">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="141430416887421" type="System" />
+            </conditions>
+            <actions>
+                <action id="-20" name="Set layout scale" sid="678542969790820" type="System">
+                    <param id="0" name="Scale">1.0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="394382273783811">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="191705589425670" type="System">
+                    <param id="0" name="Interval (seconds)">2.0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="736131290728729" type="System">
+                    <param id="0" name="Object to create">meteor2</param>
+                    <param id="1" name="Layer">&quot;Background&quot;</param>
+                    <param id="2" name="X">choose(-30, 350)</param>
+                    <param id="3" name="Y">random(30, 400)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="629566025510447">
+            <conditions>
+                <condition id="-18" name="On created" sid="664574165549495" type="meteor2" />
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="0" name="Set speed" sid="107873838426448" type="meteor2">
+                    <param id="0" name="Speed">random(10, 35)</param>
+                </action>
+                <action id="9" name="Set scale" sid="315478488530436" type="meteor2">
+                    <param id="0" name="Scale">random(0.03, 0.1)</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="359910495955480">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="843441833266392" type="meteor2">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="X co-ordinate">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="456318252408363" type="meteor2">
+                            <param id="0" name="Angle">random(-45, 45)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="769280104623380">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="773002531742561" type="meteor2">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="X co-ordinate">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="494504943537640" type="meteor2">
+                            <param id="0" name="Angle">random(135, 225)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
     </events>
 </c2eventsheet>
