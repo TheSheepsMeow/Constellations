@@ -335,17 +335,23 @@
                                 <destroy>No</destroy>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Rotate">
+                            <properties>
+                                <speed>30</speed>
+                                <acceleration>0</acceleration>
+                            </properties>
+                        </behavior-instance>
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-188.324890137</x>
-                        <y>-157.08531189</y>
+                        <x>-196.247039795</x>
+                        <y>-149.763336182</y>
                         <z>0</z>
-                        <width>44.858314514</width>
-                        <height>44.858314514</height>
+                        <width>97.284187317</width>
+                        <height>90.600540161</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
+                        <hotspotX>0.503816783</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>

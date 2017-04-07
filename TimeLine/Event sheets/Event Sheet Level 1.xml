@@ -662,7 +662,7 @@
                                             <param id="3" name="Y">random(100, 365)</param>
                                         </action>
                                         <action id="9" name="Set scale" sid="861545855998306" type="ObstacleStar">
-                                            <param id="0" name="Scale">random(0.85, 1)</param>
+                                            <param id="0" name="Scale">random(0.6, 0.75)</param>
                                         </action>
                                         <action id="-16" name="Wait" sid="132780894034464" type="System">
                                             <param id="0" name="Seconds">0.1</param>
@@ -721,7 +721,7 @@
                                     <param id="3" name="Y">random(100, 365)</param>
                                 </action>
                                 <action id="9" name="Set scale" sid="522628208890647" type="ObstacleStar">
-                                    <param id="0" name="Scale">random(0.85, 1)</param>
+                                    <param id="0" name="Scale">random(0.6, 0.75)</param>
                                 </action>
                                 <action id="-16" name="Wait" sid="873810222530577" type="System">
                                     <param id="0" name="Seconds">0.1</param>
@@ -776,7 +776,7 @@
                                     <param id="3" name="Y">random(100, 365)</param>
                                 </action>
                                 <action id="9" name="Set scale" sid="513239631663480" type="ObstacleStar">
-                                    <param id="0" name="Scale">random(0.85, 1)</param>
+                                    <param id="0" name="Scale">random(0.6, 0.75)</param>
                                 </action>
                                 <action id="-16" name="Wait" sid="277613754332804" type="System">
                                     <param id="0" name="Seconds">0.1</param>
@@ -802,7 +802,7 @@
                                     <param id="3" name="Y">random(100, 365)</param>
                                 </action>
                                 <action id="9" name="Set scale" sid="666898449530764" type="ObstacleStar">
-                                    <param id="0" name="Scale">random(0.85, 1)</param>
+                                    <param id="0" name="Scale">random(0.6, 0.75)</param>
                                 </action>
                                 <action id="-16" name="Wait" sid="451395121391557" type="System">
                                     <param id="0" name="Seconds">0.1</param>
@@ -873,7 +873,7 @@
                                             <param id="3" name="Y">random(100, 365)</param>
                                         </action>
                                         <action id="9" name="Set scale" sid="150102346714690" type="ObstacleStar">
-                                            <param id="0" name="Scale">random(0.75, 0.85)</param>
+                                            <param id="0" name="Scale">random(0.5, 0.6)</param>
                                         </action>
                                         <action id="-16" name="Wait" sid="332635005868890" type="System">
                                             <param id="0" name="Seconds">0.1</param>
@@ -932,7 +932,7 @@
                                     <param id="3" name="Y">random(100, 365)</param>
                                 </action>
                                 <action id="9" name="Set scale" sid="208331923107816" type="ObstacleStar">
-                                    <param id="0" name="Scale">random(0.85, 1)</param>
+                                    <param id="0" name="Scale">random(0.5, 0.6)</param>
                                 </action>
                                 <action id="-16" name="Wait" sid="592338334396772" type="System">
                                     <param id="0" name="Seconds">0.1</param>
@@ -987,7 +987,7 @@
                                     <param id="3" name="Y">random(100, 365)</param>
                                 </action>
                                 <action id="9" name="Set scale" sid="747349870461400" type="ObstacleStar">
-                                    <param id="0" name="Scale">random(0.85, 1)</param>
+                                    <param id="0" name="Scale">random(0.5, 0.6)</param>
                                 </action>
                                 <action id="-16" name="Wait" sid="473057478231426" type="System">
                                     <param id="0" name="Seconds">0.1</param>
@@ -1013,7 +1013,7 @@
                                     <param id="3" name="Y">random(100, 365)</param>
                                 </action>
                                 <action id="9" name="Set scale" sid="937493143688631" type="ObstacleStar">
-                                    <param id="0" name="Scale">random(0.85, 1)</param>
+                                    <param id="0" name="Scale">random(0.5, 0.6)</param>
                                 </action>
                                 <action id="-16" name="Wait" sid="471274922491519" type="System">
                                     <param id="0" name="Seconds">0.1</param>
@@ -1084,7 +1084,7 @@
                                             <param id="3" name="Y">random(100, 365)</param>
                                         </action>
                                         <action id="9" name="Set scale" sid="437127831838450" type="ObstacleStar">
-                                            <param id="0" name="Scale">random(0.75, 0.9)</param>
+                                            <param id="0" name="Scale">random(0.45, 0.6)</param>
                                         </action>
                                         <action id="-16" name="Wait" sid="495295607820765" type="System">
                                             <param id="0" name="Seconds">0.1</param>
@@ -1143,7 +1143,7 @@
                                     <param id="3" name="Y">random(100, 365)</param>
                                 </action>
                                 <action id="9" name="Set scale" sid="494859943872991" type="ObstacleStar">
-                                    <param id="0" name="Scale">random(0.75, 0.9)</param>
+                                    <param id="0" name="Scale">random(0.45, 0.6)</param>
                                 </action>
                                 <action id="-16" name="Wait" sid="696725203243245" type="System">
                                     <param id="0" name="Seconds">0.1</param>
@@ -1198,7 +1198,7 @@
                                     <param id="3" name="Y">random(100, 365)</param>
                                 </action>
                                 <action id="9" name="Set scale" sid="804607525444626" type="ObstacleStar">
-                                    <param id="0" name="Scale">random(0.75, 0.9)</param>
+                                    <param id="0" name="Scale">random(0.45, 0.6)</param>
                                 </action>
                                 <action id="-16" name="Wait" sid="500200541922537" type="System">
                                     <param id="0" name="Seconds">0.1</param>
@@ -1224,7 +1224,7 @@
                                     <param id="3" name="Y">random(100, 365)</param>
                                 </action>
                                 <action id="9" name="Set scale" sid="672204166738381" type="ObstacleStar">
-                                    <param id="0" name="Scale">random(0.75, 0.9)</param>
+                                    <param id="0" name="Scale">random(0.45, 0.6)</param>
                                 </action>
                                 <action id="-16" name="Wait" sid="560354015415525" type="System">
                                     <param id="0" name="Seconds">0.1</param>
@@ -1295,7 +1295,7 @@
                                             <param id="3" name="Y">random(100, 365)</param>
                                         </action>
                                         <action id="9" name="Set scale" sid="826930209477115" type="ObstacleStar">
-                                            <param id="0" name="Scale">random(0.6, 0.85)</param>
+                                            <param id="0" name="Scale">random(0.35, 0.5)</param>
                                         </action>
                                         <action id="-16" name="Wait" sid="483364947036637" type="System">
                                             <param id="0" name="Seconds">0.1</param>
@@ -1354,7 +1354,7 @@
                                     <param id="3" name="Y">random(100, 365)</param>
                                 </action>
                                 <action id="9" name="Set scale" sid="990528502438568" type="ObstacleStar">
-                                    <param id="0" name="Scale">random(0.6, 0.85)</param>
+                                    <param id="0" name="Scale">random(0.35, 0.5)</param>
                                 </action>
                                 <action id="-16" name="Wait" sid="304099731237662" type="System">
                                     <param id="0" name="Seconds">0.1</param>
@@ -1409,7 +1409,7 @@
                                     <param id="3" name="Y">random(100, 365)</param>
                                 </action>
                                 <action id="9" name="Set scale" sid="791428757072260" type="ObstacleStar">
-                                    <param id="0" name="Scale">random(0.6, 0.85)</param>
+                                    <param id="0" name="Scale">random(0.35, 0.5)</param>
                                 </action>
                                 <action id="-16" name="Wait" sid="710739266686947" type="System">
                                     <param id="0" name="Seconds">0.1</param>
@@ -1435,7 +1435,7 @@
                                     <param id="3" name="Y">random(100, 365)</param>
                                 </action>
                                 <action id="9" name="Set scale" sid="362371770149426" type="ObstacleStar">
-                                    <param id="0" name="Scale">random(0.6, 0.85)</param>
+                                    <param id="0" name="Scale">random(0.35, 0.5)</param>
                                 </action>
                                 <action id="-16" name="Wait" sid="539279356683929" type="System">
                                     <param id="0" name="Seconds">0.1</param>
@@ -1506,7 +1506,7 @@
                                             <param id="3" name="Y">random(100, 365)</param>
                                         </action>
                                         <action id="9" name="Set scale" sid="141565199933546" type="ObstacleStar">
-                                            <param id="0" name="Scale">random(0.5, 0.75)</param>
+                                            <param id="0" name="Scale">random(0.35, 0.5)</param>
                                         </action>
                                         <action id="-16" name="Wait" sid="434632945522787" type="System">
                                             <param id="0" name="Seconds">0.1</param>
@@ -1565,7 +1565,7 @@
                                     <param id="3" name="Y">random(100, 365)</param>
                                 </action>
                                 <action id="9" name="Set scale" sid="558831542251887" type="ObstacleStar">
-                                    <param id="0" name="Scale">random(0.5, 0.75)</param>
+                                    <param id="0" name="Scale">random(0.35, 0.5)</param>
                                 </action>
                                 <action id="-16" name="Wait" sid="639876534746931" type="System">
                                     <param id="0" name="Seconds">0.1</param>
@@ -1620,7 +1620,7 @@
                                     <param id="3" name="Y">random(100, 365)</param>
                                 </action>
                                 <action id="9" name="Set scale" sid="970897103577304" type="ObstacleStar">
-                                    <param id="0" name="Scale">random(0.5, 0.75)</param>
+                                    <param id="0" name="Scale">random(0.35, 0.5)</param>
                                 </action>
                                 <action id="-16" name="Wait" sid="727464328833262" type="System">
                                     <param id="0" name="Seconds">0.1</param>
@@ -1646,7 +1646,7 @@
                                     <param id="3" name="Y">random(100, 365)</param>
                                 </action>
                                 <action id="9" name="Set scale" sid="266121746229119" type="ObstacleStar">
-                                    <param id="0" name="Scale">random(0.5, 0.75)</param>
+                                    <param id="0" name="Scale">random(0.35, 0.5)</param>
                                 </action>
                                 <action id="-16" name="Wait" sid="674749009988241" type="System">
                                     <param id="0" name="Seconds">0.1</param>
@@ -1724,5 +1724,15 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="799513030527764">
+            <conditions>
+                <condition id="-18" name="On created" sid="182584976283471" type="ObstacleStar" />
+            </conditions>
+            <actions>
+                <action behavior="Rotate" id="0" name="Set speed" sid="238278254181950" type="ObstacleStar">
+                    <param id="0" name="Speed">random(10, 40)</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
