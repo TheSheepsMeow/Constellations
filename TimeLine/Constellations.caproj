@@ -15,6 +15,7 @@
         <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
     <used-behaviors>
@@ -244,13 +245,8 @@
         </object-type>
         <object-type name="TimeMeter" sid="442007738048168">
             <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Sine" sid="501339656451255">
-                    <behavior id="Sin" />
-                </behavior-type>
-            </behaviors>
             <animation-folder>
-                <animation framecount="23" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="156795505960182" speed="6">
+                <animation framecount="28" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="156795505960182" speed="5.4">
                     <frame duration="1" hotspotX="0" hotspotY="0.502488" original-source="C:\Users\Josiah\Desktop\Internship\MeteorTrail.png">
                         <collision-poly>
                             <point x="0.0160044" y="0.144279" />
@@ -263,6 +259,61 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0" hotspotY="0.504902" original-source="C:\Users\Josiah\Desktop\Internship\MeteorTrail.png">
+                        <collision-poly>
+                            <point x="0.0160044" y="0.144279" />
+                            <point x="0.5" y="0.134328" />
+                            <point x="0.979581" y="0.18408" />
+                            <point x="0.983996" y="0.497512" />
+                            <point x="0.970751" y="0.736318" />
+                            <point x="0.5" y="0.865672" />
+                            <point x="0.0160044" y="0.855721" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.504902">
+                        <collision-poly>
+                            <point x="0.0160044" y="0.144279" />
+                            <point x="0.5" y="0.134328" />
+                            <point x="0.979581" y="0.18408" />
+                            <point x="0.983996" y="0.497512" />
+                            <point x="0.970751" y="0.736318" />
+                            <point x="0.5" y="0.865672" />
+                            <point x="0.0160044" y="0.855721" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.504902">
+                        <collision-poly>
+                            <point x="0.0160044" y="0.144279" />
+                            <point x="0.5" y="0.134328" />
+                            <point x="0.979581" y="0.18408" />
+                            <point x="0.983996" y="0.497512" />
+                            <point x="0.970751" y="0.736318" />
+                            <point x="0.5" y="0.865672" />
+                            <point x="0.0160044" y="0.855721" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.504902">
+                        <collision-poly>
+                            <point x="0.0160044" y="0.144279" />
+                            <point x="0.5" y="0.134328" />
+                            <point x="0.979581" y="0.18408" />
+                            <point x="0.983996" y="0.497512" />
+                            <point x="0.970751" y="0.736318" />
+                            <point x="0.5" y="0.865672" />
+                            <point x="0.0160044" y="0.855721" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.504902">
+                        <collision-poly>
+                            <point x="0.0160044" y="0.144279" />
+                            <point x="0.5" y="0.134328" />
+                            <point x="0.979581" y="0.18408" />
+                            <point x="0.983996" y="0.497512" />
+                            <point x="0.970751" y="0.736318" />
+                            <point x="0.5" y="0.865672" />
+                            <point x="0.0160044" y="0.855721" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.504902">
                         <collision-poly>
                             <point x="0.0160044" y="0.144279" />
                             <point x="0.5" y="0.134328" />
@@ -738,6 +789,10 @@
                     <frame duration="1" hotspotX="0.506849" hotspotY="0.506849" />
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground" sid="988865383893276">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Josiah\Desktop\Internship\MeteorTrail.png" />
         </object-type>
     </object-folder>
     <families />

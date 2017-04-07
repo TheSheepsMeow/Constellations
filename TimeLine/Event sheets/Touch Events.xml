@@ -63,6 +63,9 @@
                             <param id="0" name="Variable">Timer</param>
                             <param id="1" name="Value">310</param>
                         </action>
+                        <action id="5" name="Set frame" sid="165697404331874" type="TimeMeter">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
                     </actions>
                     <sub-events>
                         <event-block sid="887003094447001">
@@ -142,6 +145,9 @@
                             <param id="0" name="Animation">&quot;Default&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="5" name="Set frame" sid="778425210758191" type="TimeMeter">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
                     </actions>
                     <sub-events>
                         <event-block sid="995118043173101">
@@ -207,9 +213,6 @@
                         <action id="-15" name="Set visible" sid="218958498775576" type="Touching">
                             <param id="0" name="Visibility">1</param>
                         </action>
-                        <action id="-15" name="Set visible" sid="567456420811746" type="Touching2">
-                            <param id="0" name="Visibility">1</param>
-                        </action>
                         <action id="-3" name="Create object" sid="670771171865520" type="System">
                             <param id="0" name="Object to create">Line</param>
                             <param id="1" name="Layer">0</param>
@@ -273,6 +276,9 @@
                         <action id="4" name="Set animation" sid="393212562784024" type="TimeMeter">
                             <param id="0" name="Animation">&quot;Default&quot;</param>
                             <param id="1" name="From">1</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="908792265833049" type="TimeMeter">
+                            <param id="0" name="Frame number">0</param>
                         </action>
                     </actions>
                     <sub-events>
@@ -426,9 +432,6 @@
                             <param id="0" name="Instance variable">touched</param>
                             <param id="1" name="Value">1</param>
                         </action>
-                        <action behavior="Sine" id="0" name="Set active" sid="324008111706336" type="TimeMeter">
-                            <param id="0" name="State">1</param>
-                        </action>
                         <action id="0" name="Play" sid="649833808352482" type="Audio">
                             <param id="0" name="Audio file">Press Down 4</param>
                             <param id="2" name="Loop">0</param>
@@ -458,6 +461,9 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="6" name="Set speed" sid="219333427754619" type="TimeMeter">
+                                    <param id="0" name="Speed">0</param>
+                                </action>
                                 <action id="-9" name="Set value" sid="245525770258283" type="System">
                                     <param id="0" name="Variable">Completed</param>
                                     <param id="1" name="Value">1</param>
@@ -480,9 +486,6 @@
                                     <param id="2" name="Loop">0</param>
                                     <param id="3" name="Volume">0</param>
                                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                                </action>
-                                <action behavior="Sine" id="0" name="Set active" sid="768431887562300" type="TimeMeter">
-                                    <param id="0" name="State">0</param>
                                 </action>
                                 <action id="4" name="Set animation" sid="117562521034089" type="TimeMeter">
                                     <param id="0" name="Animation">&quot;Default&quot;</param>
@@ -518,6 +521,9 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="6" name="Set speed" sid="575241696022185" type="TimeMeter">
+                                    <param id="0" name="Speed">0</param>
+                                </action>
                                 <action id="-9" name="Set value" sid="765902483910858" type="System">
                                     <param id="0" name="Variable">Completed</param>
                                     <param id="1" name="Value">1</param>
@@ -540,9 +546,6 @@
                                     <param id="2" name="Loop">0</param>
                                     <param id="3" name="Volume">0</param>
                                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                                </action>
-                                <action behavior="Sine" id="0" name="Set active" sid="302575183903953" type="TimeMeter">
-                                    <param id="0" name="State">0</param>
                                 </action>
                                 <action id="4" name="Set animation" sid="270443272796921" type="TimeMeter">
                                     <param id="0" name="Animation">&quot;Default&quot;</param>
@@ -578,6 +581,9 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="6" name="Set speed" sid="629191480414463" type="TimeMeter">
+                                    <param id="0" name="Speed">0</param>
+                                </action>
                                 <action id="-9" name="Set value" sid="239748010470579" type="System">
                                     <param id="0" name="Variable">Completed</param>
                                     <param id="1" name="Value">1</param>
@@ -600,9 +606,6 @@
                                     <param id="2" name="Loop">0</param>
                                     <param id="3" name="Volume">0</param>
                                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                                </action>
-                                <action behavior="Sine" id="0" name="Set active" sid="664519801375085" type="TimeMeter">
-                                    <param id="0" name="State">0</param>
                                 </action>
                                 <action id="4" name="Set animation" sid="683445823139468" type="TimeMeter">
                                     <param id="0" name="Animation">&quot;Default&quot;</param>
@@ -638,6 +641,9 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="6" name="Set speed" sid="607088464594781" type="TimeMeter">
+                                    <param id="0" name="Speed">0</param>
+                                </action>
                                 <action id="-9" name="Set value" sid="502051452313442" type="System">
                                     <param id="0" name="Variable">Completed</param>
                                     <param id="1" name="Value">1</param>
@@ -660,9 +666,6 @@
                                     <param id="2" name="Loop">0</param>
                                     <param id="3" name="Volume">0</param>
                                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                                </action>
-                                <action behavior="Sine" id="0" name="Set active" sid="313015981186841" type="TimeMeter">
-                                    <param id="0" name="State">0</param>
                                 </action>
                                 <action id="4" name="Set animation" sid="620166146332619" type="TimeMeter">
                                     <param id="0" name="Animation">&quot;Default&quot;</param>
@@ -698,6 +701,9 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="6" name="Set speed" sid="861969507771301" type="TimeMeter">
+                                    <param id="0" name="Speed">0</param>
+                                </action>
                                 <action id="-9" name="Set value" sid="393888180819549" type="System">
                                     <param id="0" name="Variable">Completed</param>
                                     <param id="1" name="Value">1</param>
@@ -720,9 +726,6 @@
                                     <param id="2" name="Loop">0</param>
                                     <param id="3" name="Volume">0</param>
                                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                                </action>
-                                <action behavior="Sine" id="0" name="Set active" sid="160037317566566" type="TimeMeter">
-                                    <param id="0" name="State">0</param>
                                 </action>
                                 <action id="4" name="Set animation" sid="400722217442023" type="TimeMeter">
                                     <param id="0" name="Animation">&quot;Default&quot;</param>
@@ -758,6 +761,9 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="6" name="Set speed" sid="127258380124320" type="TimeMeter">
+                                    <param id="0" name="Speed">0</param>
+                                </action>
                                 <action id="-9" name="Set value" sid="119405886118616" type="System">
                                     <param id="0" name="Variable">Completed</param>
                                     <param id="1" name="Value">1</param>
@@ -780,9 +786,6 @@
                                     <param id="2" name="Loop">0</param>
                                     <param id="3" name="Volume">0</param>
                                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                                </action>
-                                <action behavior="Sine" id="0" name="Set active" sid="913370351915031" type="TimeMeter">
-                                    <param id="0" name="State">0</param>
                                 </action>
                                 <action id="4" name="Set animation" sid="144336426024089" type="TimeMeter">
                                     <param id="0" name="Animation">&quot;Default&quot;</param>
@@ -818,6 +821,9 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="6" name="Set speed" sid="453769954420879" type="TimeMeter">
+                                    <param id="0" name="Speed">0</param>
+                                </action>
                                 <action id="-9" name="Set value" sid="496070407559968" type="System">
                                     <param id="0" name="Variable">Completed</param>
                                     <param id="1" name="Value">1</param>
@@ -840,9 +846,6 @@
                                     <param id="2" name="Loop">0</param>
                                     <param id="3" name="Volume">0</param>
                                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                                </action>
-                                <action behavior="Sine" id="0" name="Set active" sid="821219107656155" type="TimeMeter">
-                                    <param id="0" name="State">0</param>
                                 </action>
                                 <action id="4" name="Set animation" sid="403279674990330" type="TimeMeter">
                                     <param id="0" name="Animation">&quot;Default&quot;</param>
@@ -878,6 +881,9 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="6" name="Set speed" sid="669792426532993" type="TimeMeter">
+                                    <param id="0" name="Speed">0</param>
+                                </action>
                                 <action id="-9" name="Set value" sid="245302285479123" type="System">
                                     <param id="0" name="Variable">Completed</param>
                                     <param id="1" name="Value">1</param>
@@ -900,9 +906,6 @@
                                     <param id="2" name="Loop">0</param>
                                     <param id="3" name="Volume">0</param>
                                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                                </action>
-                                <action behavior="Sine" id="0" name="Set active" sid="691536931207941" type="TimeMeter">
-                                    <param id="0" name="State">0</param>
                                 </action>
                                 <action id="4" name="Set animation" sid="652906699415693" type="TimeMeter">
                                     <param id="0" name="Animation">&quot;Default&quot;</param>
@@ -938,6 +941,9 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="6" name="Set speed" sid="536228276341895" type="TimeMeter">
+                                    <param id="0" name="Speed">0</param>
+                                </action>
                                 <action id="-9" name="Set value" sid="786622571066471" type="System">
                                     <param id="0" name="Variable">Completed</param>
                                     <param id="1" name="Value">1</param>
@@ -960,9 +966,6 @@
                                     <param id="2" name="Loop">0</param>
                                     <param id="3" name="Volume">0</param>
                                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                                </action>
-                                <action behavior="Sine" id="0" name="Set active" sid="110023380960779" type="TimeMeter">
-                                    <param id="0" name="State">0</param>
                                 </action>
                                 <action id="4" name="Set animation" sid="836704703595454" type="TimeMeter">
                                     <param id="0" name="Animation">&quot;Default&quot;</param>
@@ -998,6 +1001,9 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="6" name="Set speed" sid="270819199825322" type="TimeMeter">
+                                    <param id="0" name="Speed">0</param>
+                                </action>
                                 <action id="-9" name="Set value" sid="353059156348417" type="System">
                                     <param id="0" name="Variable">Completed</param>
                                     <param id="1" name="Value">1</param>
@@ -1020,9 +1026,6 @@
                                     <param id="2" name="Loop">0</param>
                                     <param id="3" name="Volume">0</param>
                                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                                </action>
-                                <action behavior="Sine" id="0" name="Set active" sid="714994552240889" type="TimeMeter">
-                                    <param id="0" name="State">0</param>
                                 </action>
                                 <action id="4" name="Set animation" sid="364098865112952" type="TimeMeter">
                                     <param id="0" name="Animation">&quot;Default&quot;</param>
