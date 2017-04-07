@@ -1108,9 +1108,6 @@
                             <param id="0" name="Animation">&quot;Unpressed&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
-                        <action id="-16" name="Wait" sid="630620288960012" type="System">
-                            <param id="0" name="Seconds">0.5</param>
-                        </action>
                         <action id="-4" name="Set layer visible" sid="965823640862984" type="System">
                             <param id="0" name="Layer">&quot;Buttons&quot;</param>
                             <param id="1" name="Visibility">0</param>
@@ -1164,9 +1161,6 @@
                         <action id="4" name="Set animation" sid="397132276533205" type="homeButton">
                             <param id="0" name="Animation">&quot;Unpressed&quot;</param>
                             <param id="1" name="From">1</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="993738749329080" type="System">
-                            <param id="0" name="Seconds">0.5</param>
                         </action>
                         <action id="-4" name="Set layer visible" sid="878815559003713" type="System">
                             <param id="0" name="Layer">&quot;Buttons&quot;</param>
