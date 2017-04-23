@@ -212,6 +212,9 @@
                             <param id="0" name="Animation">&quot;Default&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action behavior="Sine" id="0" name="Set active" sid="791754630420431" type="Start">
+                            <param id="0" name="State">0</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="177202490292661">
@@ -411,6 +414,10 @@
                             <param id="0" name="Width">Point.Width + 5</param>
                             <param id="1" name="Height">Point.Height + 5</param>
                         </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="760380437110658" type="starOutline">
+                            <param id="0" name="Pin to">Point</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
                     </actions>
                 </event-block>
                 <comment>Pressed state for start activated</comment>
@@ -446,6 +453,9 @@
                             <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
+                        <action behavior="Sine" id="0" name="Set active" sid="649034375554407" type="Start">
+                            <param id="0" name="State">1</param>
+                        </action>
                     </actions>
                 </event-block>
                 <comment>Pressed state for start activated</comment>
@@ -480,634 +490,107 @@
                 </event-block>
                 <event-group description="" sid="867825153873324" title="Success">
                     <sub-events>
-                        <event-block sid="412859827419357">
+                        <event-block sid="110504720756843">
                             <conditions>
-                                <condition id="-8" name="Compare two values" sid="469030607383068" type="System">
-                                    <param id="0" name="First value">touched</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Second value">Point.Count</param>
-                                </condition>
-                                <condition id="-14" name="Compare variable" sid="481997137676613" type="System">
-                                    <param id="0" name="Variable">Completed</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">0</param>
-                                </condition>
-                                <condition id="-14" name="Compare variable" sid="215343223775192" type="System">
-                                    <param id="0" name="Variable">Level</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">1</param>
+                                <condition id="0" name="On function" sid="240227615318552" type="Function">
+                                    <param id="0" name="Name">&quot;success&quot;</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="4" name="Set animation" sid="955676567347882" type="meteor">
+                                <action id="4" name="Set animation" sid="291452584915514" type="meteor">
                                     <param id="0" name="Animation">&quot;Default&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
-                                <action id="6" name="Set speed" sid="219333427754619" type="TimeMeter">
+                                <action id="6" name="Set speed" sid="649536693118690" type="TimeMeter">
                                     <param id="0" name="Speed">0</param>
                                 </action>
-                                <action behavior="Bullet" id="0" name="Set speed" sid="747711436170448" type="meteor">
+                                <action behavior="Bullet" id="0" name="Set speed" sid="405377862188844" type="meteor">
                                     <param id="0" name="Speed">0</param>
                                 </action>
-                                <action behavior="Rotate" id="0" name="Set speed" sid="421048730364157" type="meteor">
+                                <action behavior="Rotate" id="0" name="Set speed" sid="675432146928372" type="meteor">
                                     <param id="0" name="Speed">0</param>
                                 </action>
-                                <action id="-9" name="Set value" sid="245525770258283" type="System">
+                                <action id="-9" name="Set value" sid="946395412253906" type="System">
                                     <param id="0" name="Variable">Completed</param>
                                     <param id="1" name="Value">1</param>
                                 </action>
-                                <action id="4" name="Set animation" sid="424388745550914" type="Line">
+                                <action id="4" name="Set animation" sid="828470882845721" type="Line">
                                     <param id="0" name="Animation">&quot;Light&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
-                                <action behavior="Sine" id="0" name="Set active" sid="780876176926459" type="Line">
+                                <action behavior="Sine" id="0" name="Set active" sid="908361524172149" type="Line">
                                     <param id="0" name="State">1</param>
                                 </action>
-                                <action id="0" name="Set text" sid="927487330236192" type="Timer">
+                                <action id="0" name="Set text" sid="894619996863070" type="Timer">
                                     <param id="0" name="Text">&quot;Success!&quot;</param>
                                 </action>
-                                <action id="6" name="Stop" sid="512825406783099" type="Audio">
+                                <action id="6" name="Stop" sid="491970562727401" type="Audio">
                                     <param id="0" name="Tag">&quot;Warning&quot;</param>
                                 </action>
-                                <action id="0" name="Play" sid="555992024579516" type="Audio">
+                                <action id="0" name="Play" sid="434240791640127" type="Audio">
                                     <param id="0" name="Audio file">Complete level jingle 2</param>
                                     <param id="2" name="Loop">0</param>
                                     <param id="3" name="Volume">0</param>
                                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                 </action>
-                                <action id="4" name="Set animation" sid="117562521034089" type="TimeMeter">
+                                <action id="4" name="Set animation" sid="277048315666985" type="TimeMeter">
                                     <param id="0" name="Animation">&quot;Default&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
-                                <action id="-16" name="Wait" sid="570775595871963" type="System">
+                                <action id="-16" name="Wait" sid="132561716086507" type="System">
                                     <param id="0" name="Seconds">2</param>
                                 </action>
-                                <action id="-21" name="Reset global variables" sid="207904021410256" type="System" />
-                                <action id="-9" name="Set value" sid="592302018759354" type="System">
-                                    <param id="0" name="Variable">Level</param>
-                                    <param id="1" name="Value">2</param>
-                                </action>
-                                <action id="-26" name="Restart layout" sid="702398085553906" type="System" />
-                            </actions>
-                        </event-block>
-                        <event-block sid="488747258277139">
-                            <conditions>
-                                <condition id="-8" name="Compare two values" sid="796624585017881" type="System">
-                                    <param id="0" name="First value">touched</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Second value">Point.Count</param>
-                                </condition>
-                                <condition id="-14" name="Compare variable" sid="103651888671929" type="System">
+                                <action disabled="1" id="-21" name="Reset global variables" sid="265003830974428" type="System" />
+                                <action id="-9" name="Set value" sid="532982104342939" type="System">
                                     <param id="0" name="Variable">Completed</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">0</param>
-                                </condition>
-                                <condition id="-14" name="Compare variable" sid="945491178693050" type="System">
-                                    <param id="0" name="Variable">Level</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">2</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="6" name="Set speed" sid="575241696022185" type="TimeMeter">
-                                    <param id="0" name="Speed">0</param>
+                                    <param id="1" name="Value">0</param>
                                 </action>
-                                <action id="4" name="Set animation" sid="103785177552742" type="meteor">
-                                    <param id="0" name="Animation">&quot;Default&quot;</param>
-                                    <param id="1" name="From">1</param>
+                                <action id="-9" name="Set value" sid="731278422013363" type="System">
+                                    <param id="0" name="Variable">Start</param>
+                                    <param id="1" name="Value">0</param>
                                 </action>
-                                <action behavior="Bullet" id="0" name="Set speed" sid="798774615807673" type="meteor">
-                                    <param id="0" name="Speed">0</param>
+                                <action id="-9" name="Set value" sid="919987747551901" type="System">
+                                    <param id="0" name="Variable">Timer</param>
+                                    <param id="1" name="Value">310</param>
                                 </action>
-                                <action behavior="Rotate" id="0" name="Set speed" sid="479348774081718" type="meteor">
-                                    <param id="0" name="Speed">0</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="765902483910858" type="System">
-                                    <param id="0" name="Variable">Completed</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                                <action id="4" name="Set animation" sid="943567221197653" type="Line">
-                                    <param id="0" name="Animation">&quot;Light&quot;</param>
-                                    <param id="1" name="From">1</param>
-                                </action>
-                                <action behavior="Sine" id="0" name="Set active" sid="511105525950250" type="Line">
-                                    <param id="0" name="State">1</param>
-                                </action>
-                                <action id="0" name="Set text" sid="158741234912395" type="Timer">
-                                    <param id="0" name="Text">&quot;Success!&quot;</param>
-                                </action>
-                                <action id="6" name="Stop" sid="446989570251526" type="Audio">
-                                    <param id="0" name="Tag">&quot;Warning&quot;</param>
-                                </action>
-                                <action id="0" name="Play" sid="505887486413477" type="Audio">
-                                    <param id="0" name="Audio file">Complete level jingle 2</param>
-                                    <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">0</param>
-                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                                </action>
-                                <action id="4" name="Set animation" sid="270443272796921" type="TimeMeter">
-                                    <param id="0" name="Animation">&quot;Default&quot;</param>
-                                    <param id="1" name="From">1</param>
-                                </action>
-                                <action id="-16" name="Wait" sid="284895966578037" type="System">
-                                    <param id="0" name="Seconds">2</param>
-                                </action>
-                                <action id="-21" name="Reset global variables" sid="173733843463067" type="System" />
-                                <action id="-9" name="Set value" sid="226692471523561" type="System">
-                                    <param id="0" name="Variable">Level</param>
-                                    <param id="1" name="Value">3</param>
-                                </action>
-                                <action id="-26" name="Restart layout" sid="813187523544732" type="System" />
-                            </actions>
-                        </event-block>
-                        <event-block sid="439632936865376">
-                            <conditions>
-                                <condition id="-8" name="Compare two values" sid="413671029025217" type="System">
-                                    <param id="0" name="First value">touched</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Second value">Point.Count</param>
-                                </condition>
-                                <condition id="-14" name="Compare variable" sid="551669634897224" type="System">
-                                    <param id="0" name="Variable">Completed</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">0</param>
-                                </condition>
-                                <condition id="-14" name="Compare variable" sid="238683992090355" type="System">
-                                    <param id="0" name="Variable">Level</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">3</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="4" name="Set animation" sid="698979375573129" type="meteor">
-                                    <param id="0" name="Animation">&quot;Default&quot;</param>
-                                    <param id="1" name="From">1</param>
-                                </action>
-                                <action id="6" name="Set speed" sid="629191480414463" type="TimeMeter">
-                                    <param id="0" name="Speed">0</param>
-                                </action>
-                                <action behavior="Bullet" id="0" name="Set speed" sid="459052698832896" type="meteor">
-                                    <param id="0" name="Speed">0</param>
-                                </action>
-                                <action behavior="Rotate" id="0" name="Set speed" sid="839270811681780" type="meteor">
-                                    <param id="0" name="Speed">0</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="239748010470579" type="System">
-                                    <param id="0" name="Variable">Completed</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                                <action id="4" name="Set animation" sid="458440957745116" type="Line">
-                                    <param id="0" name="Animation">&quot;Light&quot;</param>
-                                    <param id="1" name="From">1</param>
-                                </action>
-                                <action behavior="Sine" id="0" name="Set active" sid="457549791861091" type="Line">
-                                    <param id="0" name="State">1</param>
-                                </action>
-                                <action id="0" name="Set text" sid="568748220706903" type="Timer">
-                                    <param id="0" name="Text">&quot;Success!&quot;</param>
-                                </action>
-                                <action id="6" name="Stop" sid="449738790881169" type="Audio">
-                                    <param id="0" name="Tag">&quot;Warning&quot;</param>
-                                </action>
-                                <action id="0" name="Play" sid="905231465656113" type="Audio">
-                                    <param id="0" name="Audio file">Complete level jingle 2</param>
-                                    <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">0</param>
-                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                                </action>
-                                <action id="4" name="Set animation" sid="683445823139468" type="TimeMeter">
-                                    <param id="0" name="Animation">&quot;Default&quot;</param>
-                                    <param id="1" name="From">1</param>
-                                </action>
-                                <action id="-16" name="Wait" sid="229429718534352" type="System">
-                                    <param id="0" name="Seconds">2</param>
-                                </action>
-                                <action id="-21" name="Reset global variables" sid="388192038618340" type="System" />
-                                <action id="-9" name="Set value" sid="945552618810392" type="System">
-                                    <param id="0" name="Variable">Level</param>
+                                <action id="-9" name="Set value" sid="963244257617559" type="System">
+                                    <param id="0" name="Variable">TimeStart</param>
                                     <param id="1" name="Value">4</param>
                                 </action>
-                                <action id="-26" name="Restart layout" sid="194308863132055" type="System" />
+                                <action id="-9" name="Set value" sid="309193507322070" type="System">
+                                    <param id="0" name="Variable">touched</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="500786417016232" type="System">
+                                    <param id="0" name="Variable">Level</param>
+                                    <param id="1" name="Value">Level + 1</param>
+                                </action>
+                                <action id="-26" name="Restart layout" sid="696404039978617" type="System" />
                             </actions>
                         </event-block>
-                        <event-block sid="718061727694947">
+                        <event-block sid="970696852880360">
                             <conditions>
-                                <condition id="-8" name="Compare two values" sid="388200346655185" type="System">
+                                <condition id="-8" name="Compare two values" sid="226840573179771" type="System">
                                     <param id="0" name="First value">touched</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Second value">Point.Count</param>
                                 </condition>
-                                <condition id="-14" name="Compare variable" sid="217657313127083" type="System">
+                                <condition id="-14" name="Compare variable" sid="271428171244584" type="System">
                                     <param id="0" name="Variable">Completed</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">0</param>
                                 </condition>
-                                <condition id="-14" name="Compare variable" sid="314463255623461" type="System">
+                                <condition id="-14" name="Compare variable" sid="674167387202952" type="System">
                                     <param id="0" name="Variable">Level</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">4</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">10</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="4" name="Set animation" sid="209114320655769" type="meteor">
-                                    <param id="0" name="Animation">&quot;Default&quot;</param>
-                                    <param id="1" name="From">1</param>
+                                <action id="0" name="Call function" sid="291987598544504" type="Function">
+                                    <param id="0" name="Name">&quot;success&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
                                 </action>
-                                <action id="6" name="Set speed" sid="607088464594781" type="TimeMeter">
-                                    <param id="0" name="Speed">0</param>
-                                </action>
-                                <action behavior="Bullet" id="0" name="Set speed" sid="636308566527176" type="meteor">
-                                    <param id="0" name="Speed">0</param>
-                                </action>
-                                <action behavior="Rotate" id="0" name="Set speed" sid="393601927404941" type="meteor">
-                                    <param id="0" name="Speed">0</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="502051452313442" type="System">
-                                    <param id="0" name="Variable">Completed</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                                <action id="4" name="Set animation" sid="806525762791861" type="Line">
-                                    <param id="0" name="Animation">&quot;Light&quot;</param>
-                                    <param id="1" name="From">1</param>
-                                </action>
-                                <action behavior="Sine" id="0" name="Set active" sid="727898663648238" type="Line">
-                                    <param id="0" name="State">1</param>
-                                </action>
-                                <action id="0" name="Set text" sid="394925774016161" type="Timer">
-                                    <param id="0" name="Text">&quot;Success!&quot;</param>
-                                </action>
-                                <action id="6" name="Stop" sid="365090982028561" type="Audio">
-                                    <param id="0" name="Tag">&quot;Warning&quot;</param>
-                                </action>
-                                <action id="0" name="Play" sid="149885893669391" type="Audio">
-                                    <param id="0" name="Audio file">Complete level jingle 2</param>
-                                    <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">0</param>
-                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                                </action>
-                                <action id="4" name="Set animation" sid="620166146332619" type="TimeMeter">
-                                    <param id="0" name="Animation">&quot;Default&quot;</param>
-                                    <param id="1" name="From">1</param>
-                                </action>
-                                <action id="-16" name="Wait" sid="799192767837039" type="System">
-                                    <param id="0" name="Seconds">2</param>
-                                </action>
-                                <action id="-21" name="Reset global variables" sid="787824109600889" type="System" />
-                                <action id="-9" name="Set value" sid="709517988846112" type="System">
-                                    <param id="0" name="Variable">Level</param>
-                                    <param id="1" name="Value">5</param>
-                                </action>
-                                <action id="-26" name="Restart layout" sid="911473597584345" type="System" />
-                            </actions>
-                        </event-block>
-                        <event-block sid="916696030417777">
-                            <conditions>
-                                <condition id="-8" name="Compare two values" sid="428135256322657" type="System">
-                                    <param id="0" name="First value">touched</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Second value">Point.Count</param>
-                                </condition>
-                                <condition id="-14" name="Compare variable" sid="232021279041473" type="System">
-                                    <param id="0" name="Variable">Completed</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">0</param>
-                                </condition>
-                                <condition id="-14" name="Compare variable" sid="246906998849056" type="System">
-                                    <param id="0" name="Variable">Level</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">5</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="4" name="Set animation" sid="496983765211130" type="meteor">
-                                    <param id="0" name="Animation">&quot;Default&quot;</param>
-                                    <param id="1" name="From">1</param>
-                                </action>
-                                <action id="6" name="Set speed" sid="861969507771301" type="TimeMeter">
-                                    <param id="0" name="Speed">0</param>
-                                </action>
-                                <action behavior="Bullet" id="0" name="Set speed" sid="386982734201947" type="meteor">
-                                    <param id="0" name="Speed">0</param>
-                                </action>
-                                <action behavior="Rotate" id="0" name="Set speed" sid="480513934375306" type="meteor">
-                                    <param id="0" name="Speed">0</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="393888180819549" type="System">
-                                    <param id="0" name="Variable">Completed</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                                <action id="4" name="Set animation" sid="779727069917108" type="Line">
-                                    <param id="0" name="Animation">&quot;Light&quot;</param>
-                                    <param id="1" name="From">1</param>
-                                </action>
-                                <action behavior="Sine" id="0" name="Set active" sid="569008472615082" type="Line">
-                                    <param id="0" name="State">1</param>
-                                </action>
-                                <action id="0" name="Set text" sid="675092105976675" type="Timer">
-                                    <param id="0" name="Text">&quot;Success!&quot;</param>
-                                </action>
-                                <action id="6" name="Stop" sid="540286417396379" type="Audio">
-                                    <param id="0" name="Tag">&quot;Warning&quot;</param>
-                                </action>
-                                <action id="0" name="Play" sid="147811484206221" type="Audio">
-                                    <param id="0" name="Audio file">Complete level jingle 2</param>
-                                    <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">0</param>
-                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                                </action>
-                                <action id="4" name="Set animation" sid="400722217442023" type="TimeMeter">
-                                    <param id="0" name="Animation">&quot;Default&quot;</param>
-                                    <param id="1" name="From">1</param>
-                                </action>
-                                <action id="-16" name="Wait" sid="447615755855090" type="System">
-                                    <param id="0" name="Seconds">2</param>
-                                </action>
-                                <action id="-21" name="Reset global variables" sid="789670780358752" type="System" />
-                                <action id="-9" name="Set value" sid="398397345598926" type="System">
-                                    <param id="0" name="Variable">Level</param>
-                                    <param id="1" name="Value">6</param>
-                                </action>
-                                <action id="-26" name="Restart layout" sid="822899253467216" type="System" />
-                            </actions>
-                        </event-block>
-                        <event-block sid="545762604456432">
-                            <conditions>
-                                <condition id="-8" name="Compare two values" sid="649590431082268" type="System">
-                                    <param id="0" name="First value">touched</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Second value">Point.Count</param>
-                                </condition>
-                                <condition id="-14" name="Compare variable" sid="294148766395869" type="System">
-                                    <param id="0" name="Variable">Completed</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">0</param>
-                                </condition>
-                                <condition id="-14" name="Compare variable" sid="611707143779321" type="System">
-                                    <param id="0" name="Variable">Level</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">6</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="4" name="Set animation" sid="619840721187990" type="meteor">
-                                    <param id="0" name="Animation">&quot;Default&quot;</param>
-                                    <param id="1" name="From">1</param>
-                                </action>
-                                <action id="6" name="Set speed" sid="127258380124320" type="TimeMeter">
-                                    <param id="0" name="Speed">0</param>
-                                </action>
-                                <action behavior="Bullet" id="0" name="Set speed" sid="781344303155395" type="meteor">
-                                    <param id="0" name="Speed">0</param>
-                                </action>
-                                <action behavior="Rotate" id="0" name="Set speed" sid="577678305326779" type="meteor">
-                                    <param id="0" name="Speed">0</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="119405886118616" type="System">
-                                    <param id="0" name="Variable">Completed</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                                <action id="4" name="Set animation" sid="468431378264364" type="Line">
-                                    <param id="0" name="Animation">&quot;Light&quot;</param>
-                                    <param id="1" name="From">1</param>
-                                </action>
-                                <action behavior="Sine" id="0" name="Set active" sid="963024223167569" type="Line">
-                                    <param id="0" name="State">1</param>
-                                </action>
-                                <action id="0" name="Set text" sid="725202900194241" type="Timer">
-                                    <param id="0" name="Text">&quot;Success!&quot;</param>
-                                </action>
-                                <action id="6" name="Stop" sid="496056753885005" type="Audio">
-                                    <param id="0" name="Tag">&quot;Warning&quot;</param>
-                                </action>
-                                <action id="0" name="Play" sid="477930556046702" type="Audio">
-                                    <param id="0" name="Audio file">Complete level jingle 2</param>
-                                    <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">0</param>
-                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                                </action>
-                                <action id="4" name="Set animation" sid="144336426024089" type="TimeMeter">
-                                    <param id="0" name="Animation">&quot;Default&quot;</param>
-                                    <param id="1" name="From">1</param>
-                                </action>
-                                <action id="-16" name="Wait" sid="243922137930325" type="System">
-                                    <param id="0" name="Seconds">2</param>
-                                </action>
-                                <action id="-21" name="Reset global variables" sid="767159272476968" type="System" />
-                                <action id="-9" name="Set value" sid="322849576702765" type="System">
-                                    <param id="0" name="Variable">Level</param>
-                                    <param id="1" name="Value">7</param>
-                                </action>
-                                <action id="-26" name="Restart layout" sid="789100818109499" type="System" />
-                            </actions>
-                        </event-block>
-                        <event-block sid="136812135963166">
-                            <conditions>
-                                <condition id="-8" name="Compare two values" sid="776502790943771" type="System">
-                                    <param id="0" name="First value">touched</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Second value">Point.Count</param>
-                                </condition>
-                                <condition id="-14" name="Compare variable" sid="154207063064684" type="System">
-                                    <param id="0" name="Variable">Completed</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">0</param>
-                                </condition>
-                                <condition id="-14" name="Compare variable" sid="880362906287523" type="System">
-                                    <param id="0" name="Variable">Level</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">7</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="4" name="Set animation" sid="786530195379024" type="meteor">
-                                    <param id="0" name="Animation">&quot;Default&quot;</param>
-                                    <param id="1" name="From">1</param>
-                                </action>
-                                <action id="6" name="Set speed" sid="453769954420879" type="TimeMeter">
-                                    <param id="0" name="Speed">0</param>
-                                </action>
-                                <action behavior="Bullet" id="0" name="Set speed" sid="987273838014073" type="meteor">
-                                    <param id="0" name="Speed">0</param>
-                                </action>
-                                <action behavior="Rotate" id="0" name="Set speed" sid="956124251752218" type="meteor">
-                                    <param id="0" name="Speed">0</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="496070407559968" type="System">
-                                    <param id="0" name="Variable">Completed</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                                <action id="4" name="Set animation" sid="244008644923549" type="Line">
-                                    <param id="0" name="Animation">&quot;Light&quot;</param>
-                                    <param id="1" name="From">1</param>
-                                </action>
-                                <action behavior="Sine" id="0" name="Set active" sid="899342736981205" type="Line">
-                                    <param id="0" name="State">1</param>
-                                </action>
-                                <action id="0" name="Set text" sid="228326574610096" type="Timer">
-                                    <param id="0" name="Text">&quot;Success!&quot;</param>
-                                </action>
-                                <action id="6" name="Stop" sid="522576018733404" type="Audio">
-                                    <param id="0" name="Tag">&quot;Warning&quot;</param>
-                                </action>
-                                <action id="0" name="Play" sid="455720960743332" type="Audio">
-                                    <param id="0" name="Audio file">Complete level jingle 2</param>
-                                    <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">0</param>
-                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                                </action>
-                                <action id="4" name="Set animation" sid="403279674990330" type="TimeMeter">
-                                    <param id="0" name="Animation">&quot;Default&quot;</param>
-                                    <param id="1" name="From">1</param>
-                                </action>
-                                <action id="-16" name="Wait" sid="874870789377934" type="System">
-                                    <param id="0" name="Seconds">2</param>
-                                </action>
-                                <action id="-21" name="Reset global variables" sid="401283993468800" type="System" />
-                                <action id="-9" name="Set value" sid="844575339628426" type="System">
-                                    <param id="0" name="Variable">Level</param>
-                                    <param id="1" name="Value">8</param>
-                                </action>
-                                <action id="-26" name="Restart layout" sid="784077970969587" type="System" />
-                            </actions>
-                        </event-block>
-                        <event-block sid="118832346716229">
-                            <conditions>
-                                <condition id="-8" name="Compare two values" sid="613233468723587" type="System">
-                                    <param id="0" name="First value">touched</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Second value">Point.Count</param>
-                                </condition>
-                                <condition id="-14" name="Compare variable" sid="354126888386103" type="System">
-                                    <param id="0" name="Variable">Completed</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">0</param>
-                                </condition>
-                                <condition id="-14" name="Compare variable" sid="451217880523948" type="System">
-                                    <param id="0" name="Variable">Level</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">8</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="4" name="Set animation" sid="841285376815582" type="meteor">
-                                    <param id="0" name="Animation">&quot;Default&quot;</param>
-                                    <param id="1" name="From">1</param>
-                                </action>
-                                <action id="6" name="Set speed" sid="669792426532993" type="TimeMeter">
-                                    <param id="0" name="Speed">0</param>
-                                </action>
-                                <action behavior="Bullet" id="0" name="Set speed" sid="664356023160642" type="meteor">
-                                    <param id="0" name="Speed">0</param>
-                                </action>
-                                <action behavior="Rotate" id="0" name="Set speed" sid="957416376126947" type="meteor">
-                                    <param id="0" name="Speed">0</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="245302285479123" type="System">
-                                    <param id="0" name="Variable">Completed</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                                <action id="4" name="Set animation" sid="771726360959049" type="Line">
-                                    <param id="0" name="Animation">&quot;Light&quot;</param>
-                                    <param id="1" name="From">1</param>
-                                </action>
-                                <action behavior="Sine" id="0" name="Set active" sid="564591831063600" type="Line">
-                                    <param id="0" name="State">1</param>
-                                </action>
-                                <action id="0" name="Set text" sid="291461970637944" type="Timer">
-                                    <param id="0" name="Text">&quot;Success!&quot;</param>
-                                </action>
-                                <action id="6" name="Stop" sid="403400917090189" type="Audio">
-                                    <param id="0" name="Tag">&quot;Warning&quot;</param>
-                                </action>
-                                <action id="0" name="Play" sid="800114878027790" type="Audio">
-                                    <param id="0" name="Audio file">Complete level jingle 2</param>
-                                    <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">0</param>
-                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                                </action>
-                                <action id="4" name="Set animation" sid="652906699415693" type="TimeMeter">
-                                    <param id="0" name="Animation">&quot;Default&quot;</param>
-                                    <param id="1" name="From">1</param>
-                                </action>
-                                <action id="-16" name="Wait" sid="648883795860969" type="System">
-                                    <param id="0" name="Seconds">2</param>
-                                </action>
-                                <action id="-21" name="Reset global variables" sid="274669683863266" type="System" />
-                                <action id="-9" name="Set value" sid="797706143411545" type="System">
-                                    <param id="0" name="Variable">Level</param>
-                                    <param id="1" name="Value">9</param>
-                                </action>
-                                <action id="-26" name="Restart layout" sid="522194182116087" type="System" />
-                            </actions>
-                        </event-block>
-                        <event-block sid="559621657740372">
-                            <conditions>
-                                <condition id="-8" name="Compare two values" sid="839861476371184" type="System">
-                                    <param id="0" name="First value">touched</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Second value">Point.Count</param>
-                                </condition>
-                                <condition id="-14" name="Compare variable" sid="438800749321782" type="System">
-                                    <param id="0" name="Variable">Completed</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">0</param>
-                                </condition>
-                                <condition id="-14" name="Compare variable" sid="849652994253782" type="System">
-                                    <param id="0" name="Variable">Level</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">9</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="4" name="Set animation" sid="446218275183048" type="meteor">
-                                    <param id="0" name="Animation">&quot;Default&quot;</param>
-                                    <param id="1" name="From">1</param>
-                                </action>
-                                <action id="6" name="Set speed" sid="536228276341895" type="TimeMeter">
-                                    <param id="0" name="Speed">0</param>
-                                </action>
-                                <action behavior="Bullet" id="0" name="Set speed" sid="644529334211969" type="meteor">
-                                    <param id="0" name="Speed">0</param>
-                                </action>
-                                <action behavior="Rotate" id="0" name="Set speed" sid="505747079647537" type="meteor">
-                                    <param id="0" name="Speed">0</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="786622571066471" type="System">
-                                    <param id="0" name="Variable">Completed</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                                <action id="4" name="Set animation" sid="520271289252712" type="Line">
-                                    <param id="0" name="Animation">&quot;Light&quot;</param>
-                                    <param id="1" name="From">1</param>
-                                </action>
-                                <action behavior="Sine" id="0" name="Set active" sid="961624771509126" type="Line">
-                                    <param id="0" name="State">1</param>
-                                </action>
-                                <action id="0" name="Set text" sid="224578255721144" type="Timer">
-                                    <param id="0" name="Text">&quot;Success!&quot;</param>
-                                </action>
-                                <action id="6" name="Stop" sid="117370287884710" type="Audio">
-                                    <param id="0" name="Tag">&quot;Warning&quot;</param>
-                                </action>
-                                <action id="0" name="Play" sid="854140669561927" type="Audio">
-                                    <param id="0" name="Audio file">Complete level jingle 2</param>
-                                    <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">0</param>
-                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                                </action>
-                                <action id="4" name="Set animation" sid="836704703595454" type="TimeMeter">
-                                    <param id="0" name="Animation">&quot;Default&quot;</param>
-                                    <param id="1" name="From">1</param>
-                                </action>
-                                <action id="-16" name="Wait" sid="861230142070441" type="System">
-                                    <param id="0" name="Seconds">2</param>
-                                </action>
-                                <action id="-21" name="Reset global variables" sid="245214762779301" type="System" />
-                                <action id="-9" name="Set value" sid="895243105800048" type="System">
-                                    <param id="0" name="Variable">Level</param>
-                                    <param id="1" name="Value">10</param>
-                                </action>
-                                <action id="-26" name="Restart layout" sid="805362860824800" type="System" />
                             </actions>
                         </event-block>
                         <event-block sid="313802222677836">
@@ -1119,7 +602,7 @@
                                 </condition>
                                 <condition id="-14" name="Compare variable" sid="812562794112760" type="System">
                                     <param id="0" name="Variable">Level</param>
-                                    <param id="1" name="Comparison">0</param>
+                                    <param id="1" name="Comparison">5</param>
                                     <param id="2" name="Value">10</param>
                                 </condition>
                             </conditions>
@@ -1208,6 +691,12 @@
                             <param id="0" name="Instance variable">touched</param>
                             <param id="1" name="Value">0</param>
                         </action>
+                        <action id="11" name="Set collisions enabled" sid="879470308986953" type="Point">
+                            <param id="0" name="Collisions">1</param>
+                        </action>
+                        <action behavior="Sine" id="0" name="Set active" sid="128319330544360" type="Point">
+                            <param id="0" name="State">0</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="608560735238347">
@@ -1220,6 +709,12 @@
                         <action id="-13" name="Set boolean" sid="846216464147983" type="Point">
                             <param id="0" name="Instance variable">touched</param>
                             <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="11" name="Set collisions enabled" sid="406312666836186" type="Point">
+                            <param id="0" name="Collisions">0</param>
+                        </action>
+                        <action behavior="Sine" id="0" name="Set active" sid="321511667784604" type="Point">
+                            <param id="0" name="State">1</param>
                         </action>
                     </actions>
                 </event-block>

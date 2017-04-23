@@ -2,15 +2,17 @@
 <c2project>
     <name>Constellations</name>
     <description></description>
-    <version>1.0.0.0</version>
-    <author></author>
-    <author-email></author-email>
-    <author-website>http://</author-website>
+    <version>0.2</version>
+    <author>The Sheep&apos;s Meow</author>
+    <author-email>games@thesheepsmeow.com</author-email>
+    <author-website>http://www.thesheepsmeow.com/html5</author-website>
     <app-id>com.mycompany.myapp</app-id>
     <unique-id>288t2ubx5a1i0</unique-id>
-    <saved-with-version>23900</saved-with-version>
+    <saved-with-version>24400</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="NinePatch" version="1">9-patch</plugin>
         <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
@@ -21,6 +23,7 @@
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Rotate" version="1">Rotate</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
@@ -35,6 +38,7 @@
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
+    <first-layout>LoaderLayout</first-layout>
     <use-loader-layout>1</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
@@ -57,6 +61,11 @@
             <instance-variables>
                 <instance-variable name="touched" sid="926397212629874" type="boolean" />
             </instance-variables>
+            <behaviors>
+                <behavior-type name="Sine" sid="395496939034936">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="868423500946796" speed="3">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Pitchfork\Desktop\internship prototypes\timeline assets\start0.png" />
@@ -76,6 +85,9 @@
             <behaviors>
                 <behavior-type name="Fade" sid="575169270947751">
                     <behavior id="Fade" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="914522235450144">
+                    <behavior id="Sin" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
@@ -739,10 +751,10 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Unpressed" pingpong="0" repeatcount="1" repeatto="0" sid="504170087449752" speed="5">
-                    <frame duration="1" hotspotX="0.501124" hotspotY="0.502262" original-source="C:\Users\Josiah\Desktop\Internship\TimeLine\Art\PlayButton.png" />
+                    <frame duration="1" hotspotX="0.501124" hotspotY="0.434389" original-source="C:\Users\Josiah\Desktop\Internship\TimeLine\Art\PlayButton.png" />
                 </animation>
                 <animation framecount="1" loop="0" name="Pressed" pingpong="0" repeatcount="1" repeatto="0" sid="130303889938157" speed="5">
-                    <frame duration="1" hotspotX="0.501124" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.501124" hotspotY="0.348958" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -765,9 +777,14 @@
         </object-type>
         <object-type name="Logo" sid="802555765397148">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="417986238027772">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="502353019997569" speed="5">
-                    <frame duration="1" hotspotX="0.500347" hotspotY="0.502183" original-source="C:\Users\Josiah\Desktop\Internship\TimeLine\Art\Logo.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.506329" original-source="D:\MEOW\TimeLine\Art\Constellations_Title.png">
                         <collision-poly>
                             <point x="0.0402498" y="0.253275" />
                             <point x="0.499653" y="0.148472" />
@@ -784,6 +801,11 @@
         </object-type>
         <object-type name="starOutline" sid="665481188394217">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="394415176303781">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="433022331988836" speed="2">
                     <frame duration="1" hotspotX="0.506494" hotspotY="0.506494" />
@@ -971,6 +993,36 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="String" sid="670548356094580">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="439228167198200">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="784856063248685" speed="5">
+                    <frame duration="1" hotspotX="0.529412" hotspotY="1" original-source="D:\MEOW\TimeLine\Art\String.png">
+                        <collision-poly>
+                            <point x="0.470588" y="0.0175439" />
+                            <point x="0.647059" y="0.0350877" />
+                            <point x="0.647059" y="0.964912" />
+                            <point x="0.470588" y="0.994152" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Function" sid="404204387569796">
+            <plugin id="Function" />
+        </object-type>
+        <object-type name="Browser" sid="567654567673114">
+            <plugin id="Browser" />
+        </object-type>
+        <object-type name="TextLevel" sid="272713715859666">
+            <plugin id="Spritefont2" />
+            <texture original-source="C:\Users\Josiah\Desktop\Internship\TimeLine\Art\SpriteFont_CutiveMono_Bold_(36)_[0,0,0,6]_31x44.png" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -979,7 +1031,7 @@
         <layout>LoaderLayout.xml</layout>
     </layout-folder>
     <event-folder>
-        <event-sheet>Event Sheet Level 1.xml</event-sheet>
+        <event-sheet>Level.xml</event-sheet>
         <event-sheet>Touch Events.xml</event-sheet>
         <event-sheet>Timer Events.xml</event-sheet>
         <event-sheet>Title.xml</event-sheet>
@@ -1005,6 +1057,8 @@
                 <roll-off-factor>1</roll-off-factor>
             </properties>
         </global-instance>
+        <global-instance type="Function" uid="51" />
+        <global-instance type="Browser" uid="52" />
     </global-instances>
     <sounds-folder>
         <file name="Pickup-coin 2.m4a" />

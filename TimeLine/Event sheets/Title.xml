@@ -62,31 +62,32 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="230748380063467">
+        <comment></comment>
+        <event-block sid="141956633112272">
             <conditions>
-                <condition id="17" name="On tap object" sid="751423478320434" type="Touch">
+                <condition id="17" name="On tap object" sid="918827216952507" type="Touch">
                     <param id="0" name="Object">PlayButton</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="0" name="Play" sid="942841152837926" type="Audio">
+                <action id="0" name="Play" sid="732169210147666" type="Audio">
                     <param id="0" name="Audio file">Menu sound 4</param>
                     <param id="2" name="Loop">0</param>
                     <param id="3" name="Volume">0</param>
                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
-                <action id="4" name="Set animation" sid="633955306758440" type="PlayButton">
+                <action id="4" name="Set animation" sid="996662201564501" type="PlayButton">
                     <param id="0" name="Animation">&quot;Pressed&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
-                <action id="-16" name="Wait" sid="257067316054589" type="System">
-                    <param id="0" name="Seconds">0.5</param>
+                <action id="-16" name="Wait" sid="715457785929261" type="System">
+                    <param id="0" name="Seconds">0.3</param>
                 </action>
-                <action id="4" name="Set animation" sid="451167837217649" type="PlayButton">
+                <action id="4" name="Set animation" sid="377496793766916" type="PlayButton">
                     <param id="0" name="Animation">&quot;Unpressed&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
-                <action id="-2" name="Go to layout" sid="584729005572286" type="System">
+                <action id="-2" name="Go to layout" sid="844532795347631" type="System">
                     <param id="0" name="Layout">Level 1</param>
                 </action>
             </actions>
@@ -141,6 +142,7 @@
                 </action>
             </actions>
         </event-block>
+        <comment></comment>
         <event-block sid="837967328430164">
             <conditions>
                 <condition id="3" name="Is silent" sid="665794105866265" type="Audio" />
@@ -163,6 +165,7 @@
                 </action>
             </actions>
         </event-block>
+        <comment></comment>
         <event-block sid="930456031131435">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="141430416887421" type="System" />
@@ -228,6 +231,61 @@
                     </actions>
                 </event-block>
             </sub-events>
+        </event-block>
+        <event-block sid="660329407440476">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="384170948250335" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Pin" id="0" name="Pin to object" sid="472952002935250" type="String">
+                    <param id="0" name="Pin to">Logo</param>
+                    <param id="1" name="Mode">4</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment></comment>
+        <event-block sid="830049108770658">
+            <conditions>
+                <condition id="-2" name="Compare Y" sid="270171701046904" type="Logo">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="Y co-ordinate">150</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="452139168989654" type="Logo">
+                    <param id="0" name="Y">lerp(Logo.Y, 150, 0.05)</param>
+                </action>
+                <action id="-2" name="Set Y" sid="787232406646014" type="String">
+                    <param id="0" name="Y">lerp(Logo.Y, 150, 0.05)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="983964227610848">
+            <conditions>
+                <condition id="3" name="On touched object" sid="351411306931131" type="Touch">
+                    <param id="0" name="Object">ad</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Go to URL" sid="707676232485394" type="Browser">
+                    <param id="0" name="URL">&quot;http://www.thesheepsmeow.com/html5&quot;</param>
+                    <param id="1" name="Target">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="442283871384828">
+            <conditions>
+                <condition id="0" name="On any touch start" sid="288519142585550" type="Touch" />
+            </conditions>
+            <actions>
+                <action id="7" name="Play (by name)" sid="208304294873892" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">&quot;Star &quot; &amp; int(random(1,16))</param>
+                    <param id="3" name="Loop">0</param>
+                    <param id="4" name="Volume">0</param>
+                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>
