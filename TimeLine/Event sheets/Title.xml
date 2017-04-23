@@ -269,7 +269,7 @@
             <actions>
                 <action id="7" name="Go to URL" sid="707676232485394" type="Browser">
                     <param id="0" name="URL">&quot;http://www.thesheepsmeow.com/html5&quot;</param>
-                    <param id="1" name="Target">0</param>
+                    <param id="1" name="Target">2</param>
                 </action>
             </actions>
         </event-block>
