@@ -82,6 +82,7 @@
                             <param id="0" name="Layout">Menu</param>
                         </action>
                         <action id="-21" name="Reset global variables" sid="362484342750543" type="System" />
+                        <action id="-45" name="Reset persisted objects" sid="266594046263230" type="System" />
                     </actions>
                 </event-block>
                 <event-block sid="877204183524368">

@@ -418,6 +418,10 @@
                             <param id="0" name="Pin to">Point</param>
                             <param id="1" name="Mode">0</param>
                         </action>
+                        <action id="-9" name="Set value" sid="701813313353724" type="System">
+                            <param id="0" name="Variable">Begin</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
                     </actions>
                 </event-block>
                 <comment>Pressed state for start activated</comment>
@@ -556,6 +560,10 @@
                                 <action id="-9" name="Set value" sid="963244257617559" type="System">
                                     <param id="0" name="Variable">TimeStart</param>
                                     <param id="1" name="Value">4</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="255530014410541" type="System">
+                                    <param id="0" name="Variable">LevelStart</param>
+                                    <param id="1" name="Value">0</param>
                                 </action>
                                 <action id="-9" name="Set value" sid="309193507322070" type="System">
                                     <param id="0" name="Variable">touched</param>
@@ -766,6 +774,7 @@
                             <param id="1" name="Visibility">0</param>
                         </action>
                         <action id="-21" name="Reset global variables" sid="119554911611090" type="System" />
+                        <action id="-45" name="Reset persisted objects" sid="630183996185820" type="System" />
                         <action id="-9" name="Set value" sid="446260006967772" type="System">
                             <param id="0" name="Variable">Level</param>
                             <param id="1" name="Value">1</param>
@@ -820,6 +829,7 @@
                             <param id="1" name="Visibility">0</param>
                         </action>
                         <action id="-21" name="Reset global variables" sid="159591906542279" type="System" />
+                        <action id="-45" name="Reset persisted objects" sid="826572563969334" type="System" />
                         <action id="-9" name="Set value" sid="144737301934183" type="System">
                             <param id="0" name="Variable">Level</param>
                             <param id="1" name="Value">1</param>
