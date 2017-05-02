@@ -501,6 +501,10 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="-15" name="Set visible" sid="414610540847807" type="whiteFlash">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action behavior="Fade" id="1" name="Start fade" sid="316804267924406" type="whiteFlash" />
                                 <action id="4" name="Set animation" sid="291452584915514" type="meteor">
                                     <param id="0" name="Animation">&quot;Default&quot;</param>
                                     <param id="1" name="From">1</param>
