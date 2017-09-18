@@ -2,7 +2,7 @@
 <c2project>
     <name>Constellations</name>
     <description></description>
-    <version>0.3</version>
+    <version>0.4</version>
     <author>The Sheep&apos;s Meow</author>
     <author-email>games@thesheepsmeow.com</author-email>
     <author-website>http://www.thesheepsmeow.com/html5</author-website>
@@ -759,7 +759,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="ad" sid="608228722872660">
+        <object-type name="moregames" sid="608228722872660">
             <plugin id="NinePatch" />
             <texture />
         </object-type>

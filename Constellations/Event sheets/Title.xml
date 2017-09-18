@@ -263,7 +263,7 @@
         <event-block sid="983964227610848">
             <conditions>
                 <condition id="3" name="On touched object" sid="351411306931131" type="Touch">
-                    <param id="0" name="Object">ad</param>
+                    <param id="0" name="Object">moregames</param>
                 </condition>
             </conditions>
             <actions>
